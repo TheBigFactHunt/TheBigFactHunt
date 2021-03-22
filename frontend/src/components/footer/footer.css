@@ -1,5 +1,5 @@
-.footerWrapper{
-    text-align: center;
+.footerWrapper {
+  text-align: center;
   height: auto;
   margin-top: auto;
   position: fixed;
@@ -10,3 +10,7 @@
   padding-top: 10px;
 }
 
+.footerLinks{
+    color: rgb(255, 217, 0);
+    text-decoration: none;
+}
