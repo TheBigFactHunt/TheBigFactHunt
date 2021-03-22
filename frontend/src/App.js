@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/navbar/Navbar.js";
 import Login from "./components/login/Login.js";
+import Footer from "./components/footer/footer";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -19,6 +20,10 @@ function App() {
           <header className="App-header">
 
           </header>
+
+          <footer className="footerContainer">
+            <Footer />
+          </footer>
         </div>
     </Router>
   );
