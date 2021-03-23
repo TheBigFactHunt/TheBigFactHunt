@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Home = () => (
-        <div class="homeContainer">
+        <div className="homeContainer">
             <h1 id="welcomeText">The Big Fact Hunt</h1>
             <p id="infoText" align="center">Test your knowledge and hunt those facts</p>
         </div>

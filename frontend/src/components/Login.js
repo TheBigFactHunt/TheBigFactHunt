@@ -14,10 +14,14 @@ const Login = () => {
         console.log(data);
 
         try {
-            const response = await axios.post(`${BASE_API_URL}/login`.data);
-            setSuccessMessage("User found");
+            const response = await axios.post(`${BASE_API_URL}/login`, data);
+            const resData = await response.data
+            setSuccessMessage("User logged in");
             setErrorMessage('');
-            setUserDetails(response.data);
+            setUserDetails(resData);
+            localStorage.setItem("first_name", resData.first_name)
+            localStorage.setItem("last_name", resData.last_name)
+            localStorage.setItem("_id", resData._id)
         } catch (error) {
             console.log(error);
             if (error.response) {
@@ -37,13 +41,10 @@ const Login = () => {
 
                         {userDetails && (
                             <div className="user-details">
-                                <p>User details are:</p>
+                                <p>Logged in as:</p>
                                 <div>First Name: {userDetails.first_name}</div>
                                 <div>Surname: {userDetails.last_name}</div>
                                 <div>Email: {userDetails.user_email}</div>
-                                <div>Country: {userDetails.country}</div>
-                                <div>State: {userDetails.state}</div>
-                                <div>City: {userDetails.city}</div>
                             </div>
                         )}
                     </div>
@@ -87,8 +88,9 @@ const Login = () => {
                         )}
                 </Form.Group>
 
-                <Button variant="primary" type="submit" onClick href="/home">
-                    Login
+                 
+                <Button variant="primary" type="submit" >
+                Login
                 </Button>
             </div>
         </Form>
