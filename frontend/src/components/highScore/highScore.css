@@ -1,4 +1,4 @@
-.social_feed_container{
+.highScore_container{
     width: 20%;
     padding: 20px;
     justify-content: center;
@@ -6,7 +6,7 @@
     margin-right: 20px;
     margin-bottom: 100px;
 }
-.social_feed_wrapper{
+.highScore_wrapper{
     display: flex;
     flex-direction: column;
     width: auto;
@@ -18,15 +18,15 @@
     padding-bottom: 20px;
 }
 
-.post_box{
+.highScore_box{
     display: flex;
     flex-direction: column;
     background-color:beige;
     width: auto;
-    height: 150px;
+    height: 50px;
     color: black;
     text-align: center;
-    padding: 20px;
+    padding: 5px;
     margin: 10px 15px 10px 15px;
     border-radius: 10px;
 }
@@ -41,7 +41,4 @@
     color: gold;
     padding: 5px 5px 5px 5px;
     display: flex;
-}
-.instaImg{
-    height: 25px;
 }
