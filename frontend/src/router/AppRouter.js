@@ -26,6 +26,7 @@ const AppRouter = () => {
                     <Route render={(props) => (<PartThree {...props} user={user} updateUser={updateUser} resetUser={resetUser} /> )} path='/third'/>
                     <Route component={Login} path="/login"/>
                 </Switch>
+                {/* to be moved */}
                 <div>
                     <Social_feed />
                 </div>

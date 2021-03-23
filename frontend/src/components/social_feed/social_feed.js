@@ -15,7 +15,8 @@ const Social_feed = () => {
             textBody: "Body test2",
         },
         {
-            textTitle: "test3"
+            textTitle: "Test3",
+            textBody: "Body test3",
         }
     ])
 
