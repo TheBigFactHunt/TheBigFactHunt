@@ -4,6 +4,7 @@ import PartOne from '../components/PartOne';
 import PartTwo from '../components/PartTwo';
 import PartThree from '../components/PartThree';
 import Login from '../components/Login';
+import Home from '../components/Home'
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 
 const AppRouter = () => {
@@ -18,6 +19,7 @@ const AppRouter = () => {
         <BrowserRouter>
             <div className="container">
                 <Header />
+                <Home />
                 <Switch>
                     <Route render={(props) => (<PartOne {...props} user={user} updateUser={updateUser} /> )} path='/' exact={true}/>
                     <Route render={(props) => (<PartTwo {...props} user={user} updateUser={updateUser} /> )} path='/second'/>
