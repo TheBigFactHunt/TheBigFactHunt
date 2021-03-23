@@ -20,6 +20,7 @@ const AppRouter = () => {
     setUser({});
   };
 
+<<<<<<< HEAD
   return (
     <BrowserRouter>
       <div className="container">
@@ -72,6 +73,34 @@ const AppRouter = () => {
       </div>
     </BrowserRouter>
   );
+=======
+    return (
+        <BrowserRouter>
+            <div className="container">
+                {user.first_name ? null : <Header />}
+                <div className="container">
+                <Sidebar />
+                <Switch>
+                    <Route render={(props) => (<PartOne {...props} user={user} updateUser={updateUser} /> )} path='/' exact={true}/>
+                    <Route render={(props) => (<PartTwo {...props} user={user} updateUser={updateUser} /> )} path='/second'/>
+                    <Route render={(props) => (<PartThree {...props} user={user} updateUser={updateUser} /> )} path='/third'/>
+                    <Route render={(props) => (<Login {...props} user={user} updateUser={updateUser}/> )} path='/login' />
+                    <Route render={(props) => (<Home {...props} user={user} updateUser={updateUser} /> )} path="/home" />
+                    <Route render={() => <Redirect to="/" />} />
+                </Switch>
+                {/* to be moved */}
+                <div className="indivdual_components">
+                    <Social_feed />
+                    <HighScore />
+                </div>
+                <div className="footerContainer">
+                    <Footer />
+                </div>
+                </div>
+            </div>
+        </BrowserRouter>
+    )
+>>>>>>> main
 };
 
 export default AppRouter;
