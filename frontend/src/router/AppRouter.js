@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import Header from "../components/Header";
 import PartOne from "../components/PartOne";
@@ -11,16 +12,16 @@ import Home from "../components/Home";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 const AppRouter = () => {
-    const [user, setUser] = useState({});
-    const updateUser = (data) => {
-        setUser((prevUser) => ({ ...prevUser, ...data }));
-    };
-    const resetUser = () => {
-        setUser({});
-    };
+  const [user, setUser] = useState({});
+  const updateUser = (data) => {
+    setUser((prevUser) => ({ ...prevUser, ...data }));
+  };
+  const resetUser = () => {
+    setUser({});
+  };
     return (
         <BrowserRouter>
-            <div className="container">
+                <div className="container">
                 <Sidebar />
                 <Header />
                 <Home />
