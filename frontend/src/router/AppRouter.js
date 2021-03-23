@@ -18,45 +18,26 @@ const AppRouter = () => {
   const resetUser = () => {
     setUser({});
   };
-  return (
-    <BrowserRouter>
-      <div className="container">
-        <Sidebar />
-        <Header />
-        <Home />
-        <Switch>
-          <Route
-            render={(props) => (
-              <PartOne {...props} user={user} updateUser={updateUser} />
-            )}
-            path="/"
-            exact={true}
-          />
-          <Route
-            render={(props) => (
-              <PartTwo {...props} user={user} updateUser={updateUser} />
-            )}
-            path="/second"
-          />
-          <Route
-            render={(props) => (
-              <PartThree
-                {...props}
-                user={user}
-                updateUser={updateUser}
-                resetUser={resetUser}
-              />
-            )}
-            path="/third"
-          />
-          <Route component={Login} path="/login" />
-        </Switch>
-        <div>
-          <Social_feed />
-        </div>
-        <div className="footerContainer">
-          <Footer />
-        </div>
+
+    return (
+        <BrowserRouter>
+                <div className="container">
+                <Sidebar />
+                <Header />
+                <Home />
+                <Switch>
+                    <Route render={(props) => (<PartOne {...props} user={user} updateUser={updateUser} /> )} path='/' exact={true}/>
+                    <Route render={(props) => (<PartTwo {...props} user={user} updateUser={updateUser} /> )} path='/second'/>
+                    <Route render={(props) => (<PartThree {...props} user={user} updateUser={updateUser} resetUser={resetUser} /> )} path='/third'/>
+                    <Route component={Login} path="/login"/>
+                </Switch>
+                {/* to be moved */}
+                <div>
+                    <Social_feed />
+                </div>
+                <div className="footerContainer">
+                    <Footer />
+                </div>
       </div>
     </BrowserRouter>
   );
