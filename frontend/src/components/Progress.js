@@ -7,9 +7,10 @@ const Progress = ({location:{pathname}}) => {
     const isPartTwo = pathname === '/second';
     const isPartThree = pathname === '/third';
     const isLoginPage = pathname === '/login';
+    const isHomePage = pathname === '/home';
     return (
         <React.Fragment>
-            {!isLoginPage ? (
+            {!isLoginPage || !isHomePage ? (
             <div className="steps">
                 <div className={`${isPartOne ? 'step active' : 'step'}`}>
                     <div>1</div>

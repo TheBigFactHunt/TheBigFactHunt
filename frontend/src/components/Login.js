@@ -1,14 +1,17 @@
-import React, {useState} from 'react';
-import {useForm} from 'react-hook-form';
-import {Form, Button} from 'react-bootstrap';
+import React, { useState } from 'react';
+import { useForm } from 'react-hook-form';
+import { Form, Button } from 'react-bootstrap';
 import axios from 'axios';
-import {BASE_API_URL} from '../utils/constants';
+import { BASE_API_URL } from '../utils/constants';
+import { Link, useHistory} from 'react-router-dom';
+import Progress from './Progress';
 
-const Login = () => {
-    const {register, handleSubmit, errors} = useForm();
+const Login = (props) => {
+    const { register, handleSubmit, errors } = useForm();
     const [successMessage, setSuccessMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
     const [userDetails, setUserDetails] = useState('');
+    let history = useHistory();
 
     const onSubmit = async (data) => {
         console.log(data);
@@ -18,10 +21,11 @@ const Login = () => {
             const resData = await response.data
             setSuccessMessage("User logged in");
             setErrorMessage('');
-            setUserDetails(resData);
+            props.updateUser(resData);
             localStorage.setItem("first_name", resData.first_name)
             localStorage.setItem("last_name", resData.last_name)
-            localStorage.setItem("_id", resData._id)
+            localStorage.setItem("_id", resData._id);
+            history.push("/home");
         } catch (error) {
             console.log(error);
             if (error.response) {
@@ -30,7 +34,7 @@ const Login = () => {
             }
         }
     };
-    return(
+    return (
         <Form className="input-form" onSubmit={handleSubmit(onSubmit)}>
             <div className="col-md-6 offset-md-3">
                 {errorMessage ? (
@@ -63,10 +67,10 @@ const Login = () => {
                             }
                         })}
                         className={`${errors.user_email ? 'input-error' : ''}`}
-                        />
-                        {errors.user_email && (
-                            <p className="errorMsg">{errors.user_email.message}</p>
-                        )}
+                    />
+                    {errors.user_email && (
+                        <p className="errorMsg">{errors.user_email.message}</p>
+                    )}
                 </Form.Group>
                 <Form.Group controlId="password">
                     <Form.Label>Password</Form.Label>
@@ -81,16 +85,16 @@ const Login = () => {
                                 message: "Password should have at least 6 characters"
                             }
                         })}
-                        className={`${errors.user_password ? 'input-error' : ''}`} 
-                        />
-                        {errors.user_password && (
-                            <p className="errorMsg">{errors.user_password.message}</p>
-                        )}
+                        className={`${errors.user_password ? 'input-error' : ''}`}
+                    />
+                    {errors.user_password && (
+                        <p className="errorMsg">{errors.user_password.message}</p>
+                    )}
                 </Form.Group>
 
-                 
+
                 <Button variant="primary" type="submit" >
-                Login
+                    Login
                 </Button>
             </div>
         </Form>
