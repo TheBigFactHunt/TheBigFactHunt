@@ -5,7 +5,7 @@ import PartTwo from "../components/PartTwo";
 import PartThree from "../components/PartThree";
 import Login from "../components/Login";
 import Footer from "../components/footer/footer";
-import Sidebar from "../components/sidebar/sidebar";
+import Sidebar from "../components/sidebar/Sidebar";
 import Social_feed from "../components/social_feed/Social_feed";
 import Home from "../components/Home";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
