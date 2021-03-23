@@ -19,8 +19,8 @@ const PartOne = (props) => {
         <Form className="input-form" onSubmit={handleSubmit(onSubmit)}>
             <motion.div className="col-md-6 offset-md-3" initial={{x:'-100vw'}} animate={{x:0}} transition={{stiffness: 50}}>
                 <Form.Group controlId="first_name">
-                    <Form.Label>First Name - </Form.Label>
-                    <Form.Control type="text" name="first_name" placeholder="Enter your first name" autoComplete="off" ref={register({
+                    <Form.Label></Form.Label>
+                    <Form.Control id="regInputField" type="text" name="first_name" placeholder="First name" autoComplete="off" ref={register({
                         required:'First name is required.',
                         pattern: {
                             value: /^[a-zA-Z]+$/,
@@ -34,8 +34,8 @@ const PartOne = (props) => {
                 </Form.Group>
 
                 <Form.Group controlId="last_name">
-                    <Form.Label>Last Name - </Form.Label>
-                    <Form.Control type="text" name="last_name" placeholder="Enter your last name" autoComplete="off" ref={register({
+                    <Form.Label></Form.Label>
+                    <Form.Control id="regInputField" type="text" name="last_name" placeholder="Last name" autoComplete="off" ref={register({
                         required:'Last name is required.',
                         pattern: {
                             value: /^[a-zA-Z]+$/,
@@ -47,7 +47,7 @@ const PartOne = (props) => {
                         <p className="errorMsg">{errors.last_name.message}</p>
                     )}
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button className="nextButton" variant="primary" type="submit">
                     Next
                 </Button>
             </motion.div>

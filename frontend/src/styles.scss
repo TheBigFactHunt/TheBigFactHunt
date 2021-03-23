@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
 $base-color:crimson;
 $blue-color:darkolivegreen;
 
@@ -8,8 +10,14 @@ $blue-color:darkolivegreen;
 }
 
 body {
-  font-family:sans-serif;
+  font-family:"Dela Gothic One";
   color: $base-color;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+}
+
+#welcomeText {
+  
 }
 
 .form-control:focus {
@@ -83,6 +91,26 @@ h1 {
 .input-form {
   width: 60%;
   margin: 3rem auto;
+  text-align: center;
+}
+
+#inputForm {
+  color: red;
+}
+
+.nextButton {
+  font-size: 20px;
+  font-family: "Dela Gothic One";
+  background-color: red;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+#regInputField {
+  padding: 5px;
+  margin-top: 5px;
+  font-size: 20px;
+  font-family: "Dela Gothic One";
 }
 
 .errorMsg {
@@ -107,7 +135,7 @@ h1 {
 }
 
 .form-control.input-error {
-  border: 2px solid #f21e08;
+  border: #380036 solid 2px;
 }
 
 .user-details {
