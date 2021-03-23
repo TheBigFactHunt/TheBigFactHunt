@@ -87,8 +87,8 @@ const Login = () => {
                         )}
                 </Form.Group>
 
-                <Button variant="primary" type="submit">
-                    Check Login
+                <Button variant="primary" type="submit" onClick href="/home">
+                    Login
                 </Button>
             </div>
         </Form>
