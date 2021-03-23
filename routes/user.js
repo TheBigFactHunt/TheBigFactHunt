@@ -20,22 +20,24 @@ router.post('/register', async (req,res) => {
         res.status(500).send("Something went wrong, please try again later.");
     }
 });
-
 router.post('/login', async (req, res) => {
     try {
         const user = await User.findOne({user_email: req.body.user_email});
         if (!user) {
             return res.status(400).send("User with this email address does not exist.");
         }
+
         const isMatch = await bcrypt.compare(
             req.body.user_password,
             user.user_password
         );
+
         if (!isMatch) {
             return res.status(400).send("Invalid details.");
         }
-        const {user_password, ...rest} = user.toObject();
-        return res.send(rest);
+        const {user_password, ...user_Nopassword} = user.toObject();
+
+        return res.status(200).json(user_Nopassword);
     } catch (error) {
         return res.status(500).send("Something went wrong, try again later.");
     }
