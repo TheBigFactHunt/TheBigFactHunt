@@ -30,7 +30,7 @@ export const SidebarData = [
     icon: <FaIcons.FaCartPlus />,
   },
   {
-    title: "Submit Review",
+    title: "High Scores",
     path: "/messages",
     icon: <FaIcons.FaEnvelopeOpenText />,
 
@@ -39,12 +39,12 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: "Super Mario World 3D",
+        title: "The Quizlamic State",
         path: "/messages/message1",
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "Dicey Dungeons",
+        title: "Quizterectomy",
         path: "/messages/message2",
         icon: <IoIcons.IoIosPaper />,
       },

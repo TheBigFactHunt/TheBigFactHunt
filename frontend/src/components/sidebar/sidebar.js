@@ -7,9 +7,12 @@ import { SidebarData } from "./SidebarData";
 import SubMenu from "./subMenu";
 import { IconContext } from "react-icons/lib";
 import Searchbar from "./Searchbar";
+import "./sidebar.css";
 
 const Nav = styled.div`
-  background: #15171c;
+  background-image: url(https://i.pinimg.com/originals/e5/ba/8e/e5ba8ecb175b9f3a932a90a1811ef4da.jpg);
+  background-size: 35%;
+
   width: 100%;
   height: 110px;
   display: flex;
@@ -18,17 +21,19 @@ const Nav = styled.div`
 `;
 
 const NavIcon = styled(Link)`
-  margin-left: 2rem
+  margin-left: 2rem;
+  color: yellow;
   font-size: 2rem;
-  height:80px;
-  display:flex;
+  height: 80px;
+  display: flex;
   justify-content: flex-start;
-  align-items:center;
+  align-items: center;
 `;
 const SidebarNav = styled.nav`
-  background: #15171c;
+  background-image: url(https://i.pinimg.com/originals/e5/ba/8e/e5ba8ecb175b9f3a932a90a1811ef4da.jpg);
   width: 250px;
   height: 100vh;
+  color: yellow;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -46,14 +51,14 @@ const Sidebar = () => {
   const showSidebar = () => setSidebar(!sidebar);
   return (
     <>
-      <IconContext.Provider value={({ color: "#009B77" }, { size: "4vh" })}>
+      <IconContext.Provider value={({ color: "#f0e130" }, { size: "4vh" })}>
         <Nav>
           <NavIcon to="#">
             <FaIcons.FaBars onClick={showSidebar} className="sidelogo" />
           </NavIcon>
 
           <Searchbar />
-          <a id="loginButton" href="/login">
+          <a className="loginbutton" id="loginButton" href="/login">
             Login Here
           </a>
         </Nav>
