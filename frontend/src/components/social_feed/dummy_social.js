@@ -1,4 +1,5 @@
 import Post from "./social_posts";
+import insta from "./insta.png";
 
 const Dummy_feed = (props) => {
 //this maps over the postlist from social_feed
@@ -17,7 +18,7 @@ const Dummy_feed = (props) => {
         //this will then create posts
         <div className="social_feed_wrapper">
             <h3 className="post_head">
-                Instagram
+                Instagram   <img className="instaImg"src={insta} alt="Instagram logo" />
             </h3>
             {posts}
         </div>

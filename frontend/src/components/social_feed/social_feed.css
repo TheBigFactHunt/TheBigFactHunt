@@ -40,4 +40,8 @@
 .post_head{
     color: gold;
     padding: 5px 5px 5px 5px;
+    display: flex;
+}
+.instaImg{
+    height: 25px;
 }
