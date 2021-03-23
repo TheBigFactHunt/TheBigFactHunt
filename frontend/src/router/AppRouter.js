@@ -42,9 +42,10 @@ const AppRouter = () => {
                 <div className="footerContainer">
                     <Footer />
                 </div>
-      </div>
-    </BrowserRouter>
-  );
+                </div>
+            </div>
+        </BrowserRouter>
+    )
 };
 
 export default AppRouter;
