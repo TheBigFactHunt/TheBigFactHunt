@@ -7,11 +7,10 @@ import { SidebarData } from "./SidebarData";
 import SubMenu from "./subMenu";
 import { IconContext } from "react-icons/lib";
 import Searchbar from "./Searchbar";
-import "./sidebar.css";
+import "./Sidebar.css";
 
 const Nav = styled.div`
-  background-image: url(https://i.pinimg.com/originals/e5/ba/8e/e5ba8ecb175b9f3a932a90a1811ef4da.jpg);
-  background-size: 35%;
+  background-color: #6201c4;
 
   width: 100%;
   height: 110px;
@@ -30,7 +29,8 @@ const NavIcon = styled(Link)`
   align-items: center;
 `;
 const SidebarNav = styled.nav`
-  background-image: url(https://i.pinimg.com/originals/e5/ba/8e/e5ba8ecb175b9f3a932a90a1811ef4da.jpg);
+  background-color: #6201c4;
+  opacity: 0.9;
   width: 250px;
   height: 100vh;
   color: yellow;
