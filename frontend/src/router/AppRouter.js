@@ -6,7 +6,7 @@ import PartThree from "../components/PartThree";
 import Login from "../components/Login";
 import Footer from "../components/footer/footer";
 import Sidebar from "../components/sidebar/sidebar";
-import Social_feed from "../components/social_feed/Social_feed";
+import Social_feed from "../components/social_feed/social_feed";
 import HighScore from "../components/highScore/highScore";
 import Home from "../components/Home";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
