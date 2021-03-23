@@ -96,7 +96,7 @@ const PartThree = (props) => {
                 ...user,
                 ...updatedData
             });
-            Swal.fire("Registered successfully, you will hear from us shortly!").then((result) => {
+            Swal.fire("Registered successfully, please login!").then((result) => {
                 if (result.isConfirmed || result.isDismissed) {
                     props.resetUser();
                     props.history.push('/');
@@ -119,8 +119,9 @@ const PartThree = (props) => {
                     {isLoading && (
                         <p className="loading">Loading countries, please wait...</p>
                     )}
-                    <Form.Label>Country - </Form.Label>
+                    <Form.Label></Form.Label>
                     <Form.Control
+                        id="regInputField"
                         as="select"
                         name="country"
                         value={selectedCountry}
@@ -133,8 +134,9 @@ const PartThree = (props) => {
                     </Form.Control>
                 </Form.Group>
                 <Form.Group controlId="state">
-                    <Form.Label>State - </Form.Label>
+                    <Form.Label></Form.Label>
                     <Form.Control
+                        id="regInputField"
                         as="select"
                         name="state"
                         value={selectedState}
@@ -153,8 +155,9 @@ const PartThree = (props) => {
                     </Form.Control>
                 </Form.Group>
                 <Form.Group controlId="city">
-                    <Form.Label>City - </Form.Label>
+                    <Form.Label></Form.Label>
                     <Form.Control
+                        id="regInputField"
                         as="select"
                         name="city"
                         value={selectedCity}
@@ -170,7 +173,7 @@ const PartThree = (props) => {
                         )}
                     </Form.Control>
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button className="nextButton" variant="primary" type="submit">
                     Register
                     </Button>
             </motion.div>
