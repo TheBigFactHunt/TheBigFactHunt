@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Header from "../components/Header";
 import PartOne from "../components/PartOne";
@@ -19,6 +18,7 @@ const AppRouter = () => {
   const resetUser = () => {
     setUser({});
   };
+
     return (
         <BrowserRouter>
                 <div className="container">

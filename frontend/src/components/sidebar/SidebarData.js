@@ -19,7 +19,7 @@ export const SidebarData = [
   },
   {
     title: "Sign Up",
-    path: "/signup",
+    path: "/",
     icon: <IoIcons.IoIosPaper />,
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,

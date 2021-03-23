@@ -53,8 +53,9 @@ const Sidebar = () => {
           </NavIcon>
 
           <Searchbar />
-
-          {/* <LogIn /> */}
+          <a id="loginButton" href="/login">
+            Login Here
+          </a>
         </Nav>
 
         <SidebarNav sidebar={sidebar}>
