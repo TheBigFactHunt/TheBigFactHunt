@@ -144,6 +144,11 @@ h1 {
   margin-bottom: 1rem;
 }
 
+.indivdual_components{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 @media screen and (max-width: 1200px) {
   .input-form {
     width: 90%;
