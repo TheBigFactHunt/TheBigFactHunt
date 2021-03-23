@@ -5,6 +5,7 @@ import PartTwo from '../components/PartTwo';
 import PartThree from '../components/PartThree';
 import Login from '../components/Login';
 import Home from '../components/Home'
+import Footer from '../components/footer/footer';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 
 const AppRouter = () => {
@@ -26,6 +27,10 @@ const AppRouter = () => {
                     <Route render={(props) => (<PartThree {...props} user={user} updateUser={updateUser} resetUser={resetUser} /> )} path='/third'/>
                     <Route component={Login} path="/login"/>
                 </Switch>
+                <div className="footerContainer">
+                    <Footer />
+                </div>
+
             </div> 
         </BrowserRouter>
     );
