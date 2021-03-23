@@ -1,5 +1,6 @@
-.sidebar {
-  max-width: 20vw;
-  min-height: 100vh;
-  background-color: black;
+.loginbutton {
+  color: yellow;
+  text-shadow: 2px 2px 2px 2px #6201c4;
+  padding-left: 75%;
+  font-size: 2rem;
 }
