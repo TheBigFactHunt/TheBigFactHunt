@@ -20,13 +20,14 @@ const AppRouter = () => {
     return (
         <BrowserRouter>
             <div className="container">
-                <Header />
-                <Home />
+                {user.first_name ? null : <Header />}
                 <Switch>
                     <Route render={(props) => (<PartOne {...props} user={user} updateUser={updateUser} /> )} path='/' exact={true}/>
                     <Route render={(props) => (<PartTwo {...props} user={user} updateUser={updateUser} /> )} path='/second'/>
-                    <Route render={(props) => (<PartThree {...props} user={user} updateUser={updateUser} resetUser={resetUser} /> )} path='/third'/>
-                    <Route component={Login} path="/login"/>
+                    <Route render={(props) => (<PartThree {...props} user={user} updateUser={updateUser} /> )} path='/third'/>
+                    <Route render={(props) => (<Login {...props} user={user} updateUser={updateUser}/> )} path='/login' />
+                    <Route render={(props) => (<Home {...props} user={user} updateUser={updateUser} /> )} path="/home" />
+                    <Route render={() => <Redirect to="/" />} />
                 </Switch>
                 <div>
                     <Social_feed />
