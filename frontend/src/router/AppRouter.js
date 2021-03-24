@@ -10,7 +10,9 @@ import Social_feed from "../components/social_feed/Social_feed";
 import HighScore from "../components/highScore/highScore";
 import Home from "../components/Home";
 import Quiz from "../components/quiz/Quiz";
-import SelectQuiz from "../components/quiz/SelectQuiz";
+import EasyQuiz from "../components/quiz/EasyQuiz";
+import ProQuiz from "../components/quiz/EasyQuiz";
+import ExpertQuiz from "../components/quiz/EasyQuiz";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 const AppRouter = () => {
@@ -64,10 +66,19 @@ const AppRouter = () => {
               <Quiz {...props} user={user} updateUser={updateUser} />
               )}
               path="/quiz" />
+
             <Route render={(props) => (
-              <SelectQuiz {...props} user={user} updateUser={updateUser} />
+              <EasyQuiz {...props} user={user} updateUser={updateUser} />
               )}
-              path="/selectquiz" />
+              path="/easyquiz" />
+            <Route render={(props) => (
+              <ProQuiz {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/proquiz" />
+            <Route render={(props) => (
+              <ExpertQuiz {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/expertquiz" />
             <Route render={() => <Redirect to="/" />} />
             
           </Switch>

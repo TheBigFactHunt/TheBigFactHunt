@@ -28,16 +28,7 @@ export const SidebarData = [
     iconOpened: <RiIcons.RiArrowUpSFill />,
   },
   {
-
-    title: "Quiz List",
-    path: "/selectquiz",
-    icon: <IoIcons.IoIosSquare />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-  },
-  {
     title: "Pick A Quiz",
-    path: "/messages",
     icon: <FaQuestion.FaQuestionCircle />,
 
     iconClosed: <RiIcons.RiArrowDownSFill />,
@@ -45,13 +36,18 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: "Level: Expert!",
-        path: "/messages/message1",
+        title: "Expert",
+        path: "/expertquiz",
         icon: <GiDeath.GiDeathZone />,
       },
       {
-        title: "Level: Easy",
-        path: "/messages/message2",
+        title: "Pro",
+        path: "/proquiz",
+        icon: <GiDuck.GiHalberdShuriken />,
+      },
+      {
+        title: "Easy",
+        path: "/easyquiz",
         icon: <GiDuck.GiDuck />,
       },
     ],
