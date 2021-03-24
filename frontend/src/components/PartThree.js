@@ -98,8 +98,8 @@ const PartThree = (props) => {
             });
             Swal.fire("Registered successfully, please login!").then((result) => {
                 if (result.isConfirmed || result.isDismissed) {
-                    props.resetUser();
-                    props.history.push('/');
+                    // props.resetUser(); - function on AppRouter, causes crash if left in but needed when we implement Logout function
+                    props.history.push('/login'); // routes user to login page once registered & accepts new details
                 }
             });
         } catch (error) {
