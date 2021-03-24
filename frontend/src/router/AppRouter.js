@@ -9,6 +9,7 @@ import Sidebar from "../components/sidebar/sidebar";
 import Social_feed from "../components/social_feed/social_feed";
 import HighScore from "../components/highScore/highScore";
 import Home from "../components/Home";
+import Quiz from "../components/quiz/Quiz";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 const AppRouter = () => {
