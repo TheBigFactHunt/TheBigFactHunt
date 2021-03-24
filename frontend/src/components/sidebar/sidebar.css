@@ -1,5 +1,6 @@
 .loginbutton {
-  color: yellow;
-  padding-left: 35%;
-  font-size: 1rem;
+  color: #fcad5a;
+  text-shadow: 2px 2px 2px 2px green;
+  padding-left: 55vh;
+  font-size: 2rem;
 }

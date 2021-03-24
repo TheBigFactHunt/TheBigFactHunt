@@ -1,12 +1,14 @@
 .searchbar {
-  color: yellow;
+  color: #fcad5a;
   font-size: 2rem;
   text-align: center;
-  margin-left: 64vh;
-  min-height: 3.5vh;
+  margin-left: 70vh;
+  min-height: 4vh;
   border-radius: 55px;
-  min-width: 27vh;
-  background-size: 33%;
-
-  background-color: #17151c;
+  min-width: 50vh;
+  background-size: 100%;
+  background-position-y: center;
+  background-position-x: center;
+  box-shadow: 5px 5px 5px 5px black;
+  background-image: url("https://i.pinimg.com/originals/00/66/fe/0066fe9842b376530c7c0fe38e41d83d.jpg");
 }

@@ -10,7 +10,7 @@ import Searchbar from "./Searchbar";
 import "./sidebar.css";
 
 const Nav = styled.div`
-  background-color: #6201c4;
+  background-color: #3a2b5c;
 
   width: 100%;
   height: 110px;
@@ -21,7 +21,7 @@ const Nav = styled.div`
 
 const NavIcon = styled(Link)`
   margin-left: 2rem;
-  color: yellow;
+  color: #fcad5a;
   font-size: 2rem;
   height: 80px;
   display: flex;
@@ -29,11 +29,11 @@ const NavIcon = styled(Link)`
   align-items: center;
 `;
 const SidebarNav = styled.nav`
-  background-color: #6201c4;
+  background-color: #3a2b5c;
   opacity: 0.9;
   width: 250px;
   height: 100vh;
-  color: yellow;
+  color: #fcad5a;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -59,7 +59,7 @@ const Sidebar = () => {
 
           <Searchbar />
           <a className="loginbutton" id="loginButton" href="/login">
-            Login Here
+            Log In Here
           </a>
         </Nav>
 
