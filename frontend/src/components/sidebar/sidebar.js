@@ -59,7 +59,7 @@ const Sidebar = () => {
 
           <Searchbar />
           <a className="loginbutton" id="loginButton" href="/login">
-            Login Here
+            Log In Here
           </a>
         </Nav>
 

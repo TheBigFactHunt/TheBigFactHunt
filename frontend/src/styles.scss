@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 
-$base-color:crimson;
-$blue-color:darkolivegreen;
+$base-color: crimson;
+$blue-color: darkolivegreen;
 
 * {
   margin: 0;
@@ -10,14 +10,15 @@ $blue-color:darkolivegreen;
 }
 
 body {
-  font-family:"Dela Gothic One";
+  font-family: "Dela Gothic One";
   color: $base-color;
   background-color: #0cbaba;
-  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  background-size: 115%;
+  background-position-x: -15vh;
+  background-image: url("https://wallpaperaccess.com/full/2883508.jpg");
 }
 
 #welcomeText {
-  
 }
 
 .form-control:focus {
@@ -144,7 +145,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.indivdual_components{
+.indivdual_components {
   display: flex;
   justify-content: space-evenly;
 }
