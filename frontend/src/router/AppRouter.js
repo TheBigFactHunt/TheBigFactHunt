@@ -60,9 +60,14 @@ const AppRouter = () => {
               path="/home"
             />
             <Route render={() => <Redirect to="/" />} />
+            <Route render={(props) => (
+              <Quiz {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/quiz" />
           </Switch>
           {/* to be moved */}
-          <div className="indivdual_components">
+          <div className="individual_components">
+
             <Social_feed />
             <HighScore />
           </div>
