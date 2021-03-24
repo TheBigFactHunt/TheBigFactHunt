@@ -1,7 +1,7 @@
 img {
   box-shadow: 8px 8px 8px 8px black;
 }
-.individual_components{
+.individual_components {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
