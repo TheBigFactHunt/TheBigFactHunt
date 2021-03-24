@@ -54,11 +54,12 @@ const Login = (props) => {
                     </div>
                 )}
                 <Form.Group controlId="first_name">
-                    <Form.Label>Email</Form.Label>
+                    <Form.Label></Form.Label>
                     <Form.Control
+                        id="regInputField"
                         type="email"
                         name="user_email"
-                        placeholder="Enter your e-mail address"
+                        placeholder="E-mail address"
                         ref={register({
                             required: "Email is required.",
                             pattern: {
@@ -73,11 +74,12 @@ const Login = (props) => {
                     )}
                 </Form.Group>
                 <Form.Group controlId="password">
-                    <Form.Label>Password</Form.Label>
+                    <Form.Label></Form.Label>
                     <Form.Control
+                        id="regInputField"
                         type="password"
                         name="user_password"
-                        placeholder="Choose a password"
+                        placeholder="Password"
                         ref={register({
                             required: "Password is required.",
                             minLength: {
@@ -93,7 +95,7 @@ const Login = (props) => {
                 </Form.Group>
 
 
-                <Button variant="primary" type="submit" >
+                <Button className="nextButton" variant="primary" type="submit" >
                     Login
                 </Button>
             </div>
