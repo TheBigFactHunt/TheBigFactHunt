@@ -3,13 +3,16 @@ import "../support/support.css";
 
 const Support = (props) => {
     return (
-        <div className="contactForm">
+        <form className="contactForm">
             <h1 id="contactTitle"></h1>
-            <input id="name" placeholder="enter name">Name</input>
-            <input id="email" placeholder="enter email">Email</input>
-            <input id="message" placeholder="message">Message</input>
-            <button id="submit" placeholder="Submit">Submit</button>
-        </div>
+            <label for="name">Name</label>
+            <input name="name" id="name" placeholder="enter name"></input>
+            <label for="email">Email</label>
+            <input name="email" id="email" placeholder="enter email"></input>
+            <label for="message">Message</label>
+            <input name="message" id="message" placeholder="message"></input>
+            <button id="submit" placeholder="Submit"></button>
+        </form>
     )
 }
 
