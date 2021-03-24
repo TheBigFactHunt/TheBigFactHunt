@@ -16,8 +16,30 @@ body {
   background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 }
 
-#welcomeText {
-  
+.logoContainer {
+  text-align: center;
+}
+
+#logoImg {
+  padding: 15px;
+  border-radius: 35%;
+}
+
+#loggedInInfo {
+  color: rgb(205, 50, 50);
+  text-align: right;
+  font-size: 15px;
+}
+
+#loggedInText {
+  color: yellowgreen;
+  text-align: right;
+  font-size: 15px;
+}
+
+#homePageGreeting {
+  font-size: 20px;
+  color: goldenrod;
 }
 
 .form-control:focus {
