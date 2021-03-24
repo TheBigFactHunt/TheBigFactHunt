@@ -30,7 +30,7 @@ const NavIcon = styled(Link)`
 `;
 const SidebarNav = styled.nav`
   background-color: #3a2b5c;
-  opacity: 0.9;
+
   width: 250px;
   height: 100vh;
   color: #fcad5a;
@@ -39,7 +39,7 @@ const SidebarNav = styled.nav`
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 250ms;
+  transition: 1.5s;
   z-index: 10;
 `;
 const SidebarWrap = styled.div`
