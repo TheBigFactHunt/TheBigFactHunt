@@ -25,6 +25,13 @@ export const SidebarData = [
     iconOpened: <RiIcons.RiArrowUpSFill />,
   },
   {
+    title: "Quiz List",
+    path: "/selectquiz",
+    icon: <IoIcons.IoIosSquare />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+  },
+  {
     title: "Purchase Games",
     path: "/product",
     icon: <FaIcons.FaCartPlus />,
