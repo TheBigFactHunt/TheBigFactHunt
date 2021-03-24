@@ -5,10 +5,15 @@
   margin-left: 70vh;
   min-height: 4vh;
   border-radius: 55px;
+  outline: none;
   min-width: 50vh;
   background-size: 100%;
   background-position-y: center;
   background-position-x: center;
   box-shadow: 5px 5px 5px 5px black;
   background-image: url("https://i.pinimg.com/originals/00/66/fe/0066fe9842b376530c7c0fe38e41d83d.jpg");
+}
+
+input:focus::placeholder {
+  color: transparent;
 }
