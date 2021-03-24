@@ -9,6 +9,7 @@ import Sidebar from "../components/sidebar/sidebar";
 import Social_feed from "../components/social_feed/social_feed";
 import HighScore from "../components/highScore/highScore";
 import Home from "../components/Home";
+import Quiz from "../components/quiz/Quiz";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 const AppRouter = () => {
@@ -59,9 +60,14 @@ const AppRouter = () => {
               path="/home"
             />
             <Route render={() => <Redirect to="/" />} />
+            <Route render={(props) => (
+              <Quiz {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/quiz" />
           </Switch>
           {/* to be moved */}
-          <div className="indivdual_components">
+          <div className="individual_components">
+
             <Social_feed />
             <HighScore />
           </div>
