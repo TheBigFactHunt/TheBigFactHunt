@@ -62,29 +62,35 @@ const AppRouter = () => {
               )}
               path="/home"
             />
-            <Route render={(props) => (
-              <Quiz {...props} user={user} updateUser={updateUser} />
+            <Route
+              render={(props) => (
+                <Quiz {...props} user={user} updateUser={updateUser} />
               )}
-              path="/quiz" />
+              path="/quiz"
+            />
 
-            <Route render={(props) => (
-              <EasyQuiz {...props} user={user} updateUser={updateUser} />
+            <Route
+              render={(props) => (
+                <EasyQuiz {...props} user={user} updateUser={updateUser} />
               )}
-              path="/easyquiz" />
-            <Route render={(props) => (
-              <ProQuiz {...props} user={user} updateUser={updateUser} />
+              path="/easyquiz"
+            />
+            <Route
+              render={(props) => (
+                <ProQuiz {...props} user={user} updateUser={updateUser} />
               )}
-              path="/proquiz" />
-            <Route render={(props) => (
-              <ExpertQuiz {...props} user={user} updateUser={updateUser} />
+              path="/proquiz"
+            />
+            <Route
+              render={(props) => (
+                <ExpertQuiz {...props} user={user} updateUser={updateUser} />
               )}
-              path="/expertquiz" />
+              path="/expertquiz"
+            />
             <Route render={() => <Redirect to="/" />} />
-            
           </Switch>
           {/* to be moved */}
           <div className="individual_components">
-
             <Social_feed />
             <HighScore />
           </div>
