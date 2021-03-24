@@ -24,7 +24,7 @@ const AppRouter = () => {
     <BrowserRouter>
       <div className="container">
         <Sidebar />
-        {user.first_name ? null : <Header />}
+        {user._id ? null : <Header />}
         <div className="container">
           <Switch>
             <Route
