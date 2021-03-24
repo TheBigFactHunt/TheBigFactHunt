@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 
-$base-color: crimson;
+$base-color: #fcad5a;
 $blue-color: darkolivegreen;
 
 * {
@@ -28,7 +28,7 @@ body {
 }
 
 #loggedInInfo {
-  color: rgb(205, 50, 50);
+  color: #fcad5a;
   text-align: right;
   font-size: 15px;
 }
@@ -36,7 +36,7 @@ body {
 #loggedInText {
   color: yellowgreen;
   text-align: right;
-  font-size: 15px;
+  font-size: 35px;
 }
 
 #homePageGreeting {
@@ -71,7 +71,7 @@ h1 {
   .step {
     margin: 0.5rem 3rem;
     display: flex;
-    color: #ccc;
+    color: #fcad5a;
 
     a {
       color: $base-color;
@@ -116,21 +116,29 @@ h1 {
   width: 60%;
   margin: 3rem auto;
   text-align: center;
+  background-color: transparent;
 }
 
 #inputForm {
-  color: red;
+  color: #fcad5a;
 }
 
 .nextButton {
   font-size: 20px;
   font-family: "Dela Gothic One";
-  background-color: red;
+  background-color: #fcad5a;
   padding: 5px;
   margin-top: 5px;
+  color: #380036;
+  border-radius: 8%;
+  box-shadow: 5px 5px 5px 5px #380036;
 }
 
 #regInputField {
+  box-shadow: 5px 5px 5px 5px #380036;
+  border-radius: 45px;
+  background-color: transparent;
+  color: yellow;
   padding: 5px;
   margin-top: 5px;
   font-size: 20px;
@@ -138,6 +146,7 @@ h1 {
 }
 
 .errorMsg {
+  text-align: center;
   max-width: 350px;
   color: #f3c42b;
   padding: 2px 0;
