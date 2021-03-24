@@ -177,12 +177,9 @@ h1 {
   margin-bottom: 1rem;
 }
 
-
-.indivdual_components {
-
 .individual_components{
-
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -222,4 +219,4 @@ h1 {
       align-items: center;
     }
   }
-}}
+}
