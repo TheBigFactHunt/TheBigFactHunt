@@ -18,7 +18,33 @@ body {
   background-image: url("https://wallpaperaccess.com/full/2883508.jpg");
 }
 
+
 #welcomeText {
+.logoContainer {
+  text-align: center;
+}
+
+#logoImg {
+  padding: 15px;
+  border-radius: 35%;
+}
+
+#loggedInInfo {
+  color: rgb(205, 50, 50);
+  text-align: right;
+  font-size: 15px;
+}
+
+#loggedInText {
+  color: yellowgreen;
+  text-align: right;
+  font-size: 15px;
+}
+
+#homePageGreeting {
+  font-size: 20px;
+  color: goldenrod;
+
 }
 
 .form-control:focus {
