@@ -28,9 +28,12 @@ export const SidebarData = [
     iconOpened: <RiIcons.RiArrowUpSFill />,
   },
   {
-    title: "High Scores",
-    path: "/product",
-    icon: <BiGame.BiGame />,
+
+    title: "Quiz List",
+    path: "/selectquiz",
+    icon: <IoIcons.IoIosSquare />,
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
   },
   {
     title: "Pick A Quiz",

@@ -1,0 +1,21 @@
+.quizListContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#quiz1 {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#quiz2 {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#quiz3 {
+    font-size: 30px;
+    text-decoration: none;
+}
