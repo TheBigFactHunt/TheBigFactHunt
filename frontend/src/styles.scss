@@ -187,6 +187,11 @@ h1 {
   .steps .step {
     margin: 0.5rem 2rem;
   }
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2600px;
+  }
 }
 
 @media screen and (max-width: 600px) {
