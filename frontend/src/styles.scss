@@ -53,9 +53,17 @@ body {
 }
 
 h1 {
+  text-shadow: slateblue 3px 3px 3px;
+  background-color: transparent;
+  box-shadow: 6px 6px 6px 6px black;
+  border-radius: 35px;
   text-align: center;
+  min-height: 16vh;
+  padding-top: 3vh;
+  max-width: 65vh;
   margin-top: 1rem;
   font-size: 2.2rem;
+  margin-left: 70vh;
 }
 
 .btn {
@@ -177,7 +185,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.individual_components{
+.individual_components {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

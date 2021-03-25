@@ -7,7 +7,7 @@ import { SidebarData } from "./SidebarData";
 import SubMenu from "./subMenu";
 import { IconContext } from "react-icons/lib";
 import Searchbar from "./Searchbar";
-import "./sidebar.css";
+import "./Sidebar.css";
 
 const Nav = styled.div`
   background-color: #3a2b5c;
@@ -58,9 +58,21 @@ const Sidebar = (props) => {
           </NavIcon>
 
           <Searchbar />
-          
-        {props.user.first_name ? <span><p id="loginInfo">{props.user.first_name} {props.user.last_name}</p><a className="loginbutton" id="loginButton" href="/login">Sign Out</a> </span> : <a className="loginbutton" id="loginButton" href="/login">Login</a>}
 
+          {props.user.first_name ? (
+            <span>
+              <p id="loginInfo">
+                {props.user.first_name} {props.user.last_name}
+              </p>
+              <a className="loginbutton" id="loginButton" href="/login">
+                Sign Out
+              </a>{" "}
+            </span>
+          ) : (
+            <a className="loginbutton" id="loginButton" href="/login">
+              Log In
+            </a>
+          )}
         </Nav>
 
         <SidebarNav sidebar={sidebar}>
