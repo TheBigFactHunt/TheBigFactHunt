@@ -2,14 +2,14 @@ import "./highScore.css";
 import React, {useState} from 'react';
 import Dummy_highScore from "./dummy_highScore";
 
-const Social_feed = () => {
+const Social_feed = (props) => {
     const [scoreList, setScoreList] = useState([
         {
-            textUser: "user 1",
+            textUser: props.user.first_name,
             score: 21000,
         },
         {
-            textUser: "user 2",
+            textUser: props.user.last_name,
             score: 5000,
         },
         {

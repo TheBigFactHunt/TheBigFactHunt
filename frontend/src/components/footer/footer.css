@@ -8,6 +8,7 @@
   background-color: rgba(0, 0, 0, 0.856);
   color: aliceblue;
   padding-top: 10px;
+  z-index: 1;
 }
 
 .footerLinks{
