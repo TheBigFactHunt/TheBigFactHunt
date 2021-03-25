@@ -53,9 +53,16 @@ body {
 }
 
 h1 {
+  text-shadow: turquoise 2px 2px 2px;
   text-align: center;
   margin-top: 1rem;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  background-color: transparent;
+  height: 12vh;
+  width: 90vh;
+  margin-left: 60vh;
+  border-radius: 35px;
+  box-shadow: 6px 6px 6px 6px black;
 }
 
 .btn {
@@ -177,7 +184,7 @@ h1 {
   margin-bottom: 1rem;
 }
 
-.individual_components{
+.individual_components {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
