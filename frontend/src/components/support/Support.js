@@ -44,7 +44,7 @@ class Support extends Component {
     render() {
         let buttonText = this.state.status;
         return (      
-            <form onSubmit={this.handleSubmit.bind(this)} method="POST">
+            <form className="supportForm" onSubmit={this.handleSubmit.bind(this)} method="POST">
                 <div>
                 <label htmlFor="name">Name:</label>
                 <input
@@ -81,19 +81,3 @@ class Support extends Component {
 }
 
 export default Support; 
-
-
-// const Support = (props) => {
-//     return (
-//         <form className="contactForm">
-//             <h1 id="contactTitle"></h1>
-//             <label for="name">Name</label>
-//             <input name="name" id="name" placeholder="Enter your name"></input>
-//             <label for="email">Email</label>
-//             <input name="email" id="email" placeholder="Enter your email"></input>
-//             <label for="message">Message</label>
-//             <input name="message" id="message" placeholder="Type your message here.."></input>
-//             <a id="submit" href="/">SUBMIT</a>
-//         </form>
-//     )
-// }
