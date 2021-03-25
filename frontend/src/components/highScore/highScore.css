@@ -43,6 +43,14 @@
     padding: 5px 5px 5px 5px;
     display: flex;
 }
+
+
+@media screen and (max-width: 900px) {
+    .highScore_container {
+        display: none;
+    }}
+
 .highImg{
     box-shadow: none;
+
 }

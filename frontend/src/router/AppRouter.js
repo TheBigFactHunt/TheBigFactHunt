@@ -5,7 +5,7 @@ import PartTwo from "../components/PartTwo";
 import PartThree from "../components/PartThree";
 import Login from "../components/Login";
 import Footer from "../components/footer/footer";
-import Sidebar from "../components/sidebar/sidebar";
+import Sidebar from "../components/sidebar/Sidebar";
 import Home from "../components/Home";
 import Quiz from "../components/quiz/Quiz";
 import EasyQuiz from "../components/quiz/EasyQuiz";

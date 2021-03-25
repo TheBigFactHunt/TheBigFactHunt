@@ -49,3 +49,10 @@
 .highScore_wrapper {
   box-shadow: 6px 6px 6px 6px black;
 }
+
+
+@media screen and (max-width: 900px) {
+    .social_feed_container {
+        display: none;
+    }
+}
