@@ -6,12 +6,12 @@ const Home = (props) => {
   console.log(props);
   return (
     <div className="homeContainer">
-      <div className="loggedIn">
+      {/* <div className="loggedIn">
         <h3 id="loggedInText">Logged in as</h3>{" "}
         <p id="loggedInInfo">
           {props.user.first_name} {props.user.last_name}{" "}
         </p>
-      </div>
+      </div> */}
       {/* <h1 id="welcomeText">The Big Fact Hunt</h1> */}
       <div className="logoContainer">
         <img id="logoImg" src={Logo} alt="Logo image" />

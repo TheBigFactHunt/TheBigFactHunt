@@ -11,8 +11,9 @@ import HighScore from "../components/highScore/highScore";
 import Home from "../components/Home";
 import Quiz from "../components/quiz/Quiz";
 import EasyQuiz from "../components/quiz/EasyQuiz";
-import ProQuiz from "../components/quiz/EasyQuiz";
-import ExpertQuiz from "../components/quiz/EasyQuiz";
+import ProQuiz from "../components/quiz/ProQuiz";
+import ExpertQuiz from "../components/quiz/ExpertQuiz";
+import Support from "../components/support/Support";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 const AppRouter = () => {
@@ -27,7 +28,7 @@ const AppRouter = () => {
   return (
     <BrowserRouter>
       <div className="container">
-        <Sidebar />
+        <Sidebar user={user}/>
         {user._id ? null : <Header />}
         <div className="container">
           <Switch>
@@ -85,8 +86,11 @@ const AppRouter = () => {
               render={(props) => (
                 <ExpertQuiz {...props} user={user} updateUser={updateUser} />
               )}
-              path="/expertquiz"
-            />
+              path="/expertquiz" />
+            <Route render={(props) => (
+              <Support {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/support" />
             <Route render={() => <Redirect to="/" />} />
           </Switch>
           {/* to be moved */}

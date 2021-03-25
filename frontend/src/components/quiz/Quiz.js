@@ -1,40 +1,25 @@
 import React, { useState, useEffect } from "react";
+import Question from "./Question";
 import "./quiz.css";
 
 const Quiz = (props) => {
 
-    const [quiz, setQuiz] = useState([]);
+    const [questions, setQuestions] = useState([]);
+    const [counter, setCounter] = useState(0);
+    const [score, setScore] = useState(0);
   useEffect(() => {
     const getter = async () => {
       const response = await fetch(`https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=boolean`);
       const data = await response.json();
-      setQuiz(data);
+      setQuestions(data.results);
     };
     getter();
   }, []);
 
     return (
         <div className="quizWrapper">
-                {quiz}
-            <div id="quizInfo">
-                <p>CATEGORY</p>
-                <p>TYPE</p>
-                <p>DIFFICULTY</p>
-            </div>
-
-            <div id="quizQuestion">
-                <p>TEST</p>
-            </div>
-
-            <div id="quizAnswer">
-                <p>TEST</p>
-            </div>
-
-            <div id="selectAnswer">
-                <a id="answerTrue">TRUE</a>
-                <a id="answerFalse">FALSE</a>
-            </div>
-            
+                <h2 id="scoreCounter">Score: {counter}</h2>
+                {questions.length>0 ? <Question question={questions[counter]} setScore={setScore} counter={counter} setCounter={setCounter}/> : null }  
         </div>
     )
 }
