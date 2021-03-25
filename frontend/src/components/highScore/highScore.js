@@ -2,7 +2,7 @@ import "./highScore.css";
 import React, {useState} from 'react';
 import Dummy_highScore from "./dummy_highScore";
 
-const Social_feed = (props) => {
+const HighScore = (props) => {
     const [scoreList, setScoreList] = useState([
         {
             textUser: props.user.first_name,
@@ -44,4 +44,4 @@ const Social_feed = (props) => {
     )
 }
 
-export default Social_feed;
+export default HighScore;

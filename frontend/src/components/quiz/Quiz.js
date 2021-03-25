@@ -18,10 +18,9 @@ const Quiz = (props) => {
 
     return (
         <div className="quizWrapper">
-                <h2 id="scoreCounter">Score: {counter}</h2>
-                {questions.length>0 ? <Question question={questions[counter]} setScore={setScore} counter={counter} setCounter={setCounter}/> : null }  
+                <h2 id="scoreCounter">Score: {score}</h2>
+                {questions.length>0 ? <Question question={questions[counter]} score={score} setScore={setScore} counter={counter} setCounter={setCounter}/> : null }  
         </div>
     )
 }
-
 export default Quiz;
