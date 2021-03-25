@@ -1,5 +1,6 @@
 const express = require("express");
 const userRouter = require('./routes/user');
+const scoresRouter = require('./routes/scores');
 const cors = require("cors");
 const bodyParser = require('body-parser');
 // const nodemailer = require("nodemailer"); //added by joe for testing contact form
@@ -15,6 +16,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
 app.use("/users", userRouter);
+app.use("/scores", scoresRouter);
 // app.use("/", router); //added by joe for contact form
 
 // app.listen(5000, () => console.log("Server Running")); //added by joe for testing contact form
