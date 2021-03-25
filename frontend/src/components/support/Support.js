@@ -46,7 +46,8 @@ class Support extends Component {
         return (      
             <form className="supportForm" onSubmit={this.handleSubmit.bind(this)} method="POST">
                 <div>
-                <label htmlFor="name">Name:</label>
+                <p id="name">Name</p>
+                <label htmlFor="name"></label>
                 <input
                     type="text"
                     id="name"
@@ -56,7 +57,8 @@ class Support extends Component {
                 />
                 </div>
                 <div>
-                <label htmlFor="email">Email:</label>
+                <p id="email">Email</p>
+                <label htmlFor="email"></label>
                 <input
                     type="email"
                     id="email"
@@ -66,7 +68,8 @@ class Support extends Component {
                 />
                 </div>
                 <div>
-                <label htmlFor="message">Message:</label>
+                <p id="message">Message</p>
+                <label htmlFor="message"></label>
                 <textarea
                     id="message"
                     value={this.state.message}
@@ -74,7 +77,7 @@ class Support extends Component {
                     required
                 />
                 </div>
-                <button type="submit">{buttonText}</button>
+                <a id="submit" href="/">{buttonText}</a>
             </form>      
         );
     }
