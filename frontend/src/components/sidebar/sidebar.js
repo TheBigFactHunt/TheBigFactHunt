@@ -45,7 +45,7 @@ const SidebarNav = styled.nav`
 const SidebarWrap = styled.div`
   width: 100%;
 `;
-const Sidebar = () => {
+const Sidebar = (props) => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -58,9 +58,9 @@ const Sidebar = () => {
           </NavIcon>
 
           <Searchbar />
-          <a className="loginbutton" id="loginButton" href="/login">
-            Login
-          </a>
+          
+        {props.user.first_name ? <span><p id="loginInfo">{props.user.first_name} {props.user.last_name}</p><a className="loginbutton" id="loginButton" href="/login">Sign Out</a> </span> : <a className="loginbutton" id="loginButton" href="/login">Login</a>}
+
         </Nav>
 
         <SidebarNav sidebar={sidebar}>
