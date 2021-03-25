@@ -5,9 +5,7 @@ import PartTwo from "../components/PartTwo";
 import PartThree from "../components/PartThree";
 import Login from "../components/Login";
 import Footer from "../components/footer/footer";
-import Sidebar from "../components/sidebar/Sidebar";
-import Social_feed from "../components/social_feed/Social_feed";
-import HighScore from "../components/highScore/highScore";
+import Sidebar from "../components/sidebar/sidebar";
 import Home from "../components/Home";
 import Quiz from "../components/quiz/Quiz";
 import EasyQuiz from "../components/quiz/EasyQuiz";
@@ -87,12 +85,6 @@ const AppRouter = () => {
             <Route render={() => <Redirect to="/" />} />
             
           </Switch>
-          {/* to be moved */}
-          <div className="individual_components">
-
-            <Social_feed />
-            <HighScore />
-          </div>
           <div className="footerContainer">
             <Footer />
           </div>

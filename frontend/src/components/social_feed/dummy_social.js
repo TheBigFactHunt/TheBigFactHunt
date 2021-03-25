@@ -1,4 +1,4 @@
-import Post from "./Social_posts";
+import Post from "./social_posts";
 import insta from "./insta.png";
 
 const Dummy_feed = (props) => {
