@@ -1,19 +1,98 @@
 import React from "react";
 import "../support/support.css";
+import axios from "axios";
 
 const Support = (props) => {
     return (
         <form className="contactForm">
             <h1 id="contactTitle"></h1>
             <label for="name">Name</label>
-            <input name="name" id="name" placeholder="enter name"></input>
+            <input name="name" id="name" placeholder="Enter your name"></input>
             <label for="email">Email</label>
-            <input name="email" id="email" placeholder="enter email"></input>
+            <input name="email" id="email" placeholder="Enter your email"></input>
             <label for="message">Message</label>
-            <input name="message" id="message" placeholder="message"></input>
-            <button id="submit" placeholder="Submit"></button>
+            <input name="message" id="message" placeholder="Type your message here.."></input>
+            <a id="submit" href="/">SUBMIT</a>
         </form>
     )
 }
+
+// class Support extends Component {
+//     constructor() {
+//         super();
+//         this.state = {
+//             name: "",
+//             email: "",
+//             message: "",
+//             status: "Submit"
+//         };
+//     }
+
+//     handleChange(event) {
+//         const field = event.target.id;
+//         if (field === "name") {
+//           this.setState({ name: event.target.value });
+//         } else if (field === "email") {
+//           this.setState({ email: event.target.value });
+//         } else if (field === "message") {
+//           this.setState({ message: event.target.value });
+//         }
+//       }
+
+//       handleSubmit(event) {
+//         event.preventDefault();  
+//         this.setState({ status: "Sending" });  
+//         axios({
+//           method: "POST",
+//           url: "http://localhost:5000/contact",
+//           data: this.state,
+//         }).then((response) => {
+//           if (response.data.status === "sent") {
+//             alert("Message Sent");
+//             this.setState({ name: "", email: "", message: "", status: "Submit" });
+//           } else if (response.data.status === "failed") {
+//             alert("Message Failed");
+//           }
+//         });
+//       }
+
+//     render() {
+//         let buttonText = this.state.status;
+//         return (      
+//             <form onSubmit={this.handleSubmit.bind(this)} method="POST">
+//                 <div>
+//                 <label htmlFor="name">Name:</label>
+//                 <input
+//                     type="text"
+//                     id="name"
+//                     value={this.state.name}
+//                     onChange={this.handleChange.bind(this)}
+//                     required
+//                 />
+//                 </div>
+//                 <div>
+//                 <label htmlFor="email">Email:</label>
+//                 <input
+//                     type="email"
+//                     id="email"
+//                     value={this.state.email}
+//                     onChange={this.handleChange.bind(this)}
+//                     required
+//                 />
+//                 </div>
+//                 <div>
+//                 <label htmlFor="message">Message:</label>
+//                 <textarea
+//                     id="message"
+//                     value={this.state.message}
+//                     onChange={this.handleChange.bind(this)}
+//                     required
+//                 />
+//                 </div>
+//                 <button type="submit">{buttonText}</button>
+//             </form>      
+//         );
+//     }
+// }
 
 export default Support; 
