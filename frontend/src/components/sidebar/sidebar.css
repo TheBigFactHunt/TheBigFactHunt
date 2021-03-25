@@ -11,3 +11,7 @@
   color: greenyellow;
   font-size: 30px;
 }
+.sidebarNav {
+  min-height: 20vh;
+  border-radius: 45px;
+}

@@ -7,7 +7,7 @@ import { SidebarData } from "./SidebarData";
 import SubMenu from "./subMenu";
 import { IconContext } from "react-icons/lib";
 import Searchbar from "./Searchbar";
-import "./sidebar.css";
+import "./Sidebar.css";
 
 const Nav = styled.div`
   background-color: #3a2b5c;
@@ -29,10 +29,13 @@ const NavIcon = styled(Link)`
   align-items: center;
 `;
 const SidebarNav = styled.nav`
+  box-shadow: 5px 5px 5px 5px black;
   background-color: #3a2b5c;
-
+  border-radius: 45px;
+  margin-top: 20vh;
   width: 250px;
-  height: 100vh;
+  margin-left: 2vh;
+  height: 70vh;
   color: #fcad5a;
   display: flex;
   justify-content: center;
@@ -58,9 +61,21 @@ const Sidebar = (props) => {
           </NavIcon>
 
           <Searchbar />
-          
-        {props.user.first_name ? <span><p id="loginInfo">{props.user.first_name} {props.user.last_name}</p><a className="loginbutton" id="loginButton" href="/login">Sign Out</a> </span> : <a className="loginbutton" id="loginButton" href="/login">Login</a>}
 
+          {props.user.first_name ? (
+            <span>
+              <p id="loginInfo">
+                {props.user.first_name} {props.user.last_name}
+              </p>
+              <a className="loginbutton" id="loginButton" href="/login">
+                Sign Out
+              </a>{" "}
+            </span>
+          ) : (
+            <a className="loginbutton" id="loginButton" href="/login">
+              Log In
+            </a>
+          )}
         </Nav>
 
         <SidebarNav sidebar={sidebar}>
