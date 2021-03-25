@@ -9,7 +9,7 @@ class Support extends Component {
             name: "",
             email: "",
             message: "",
-            status: "Submit"
+            status: "Submit" 
         };
     }
 
