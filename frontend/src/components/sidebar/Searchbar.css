@@ -17,3 +17,9 @@
 input:focus::placeholder {
   color: transparent;
 }
+
+@media screen and (max-width: 900px) {
+  .searchbar {
+      display: none;
+  }
+}

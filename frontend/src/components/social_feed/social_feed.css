@@ -45,3 +45,9 @@
 .instaImg{
     height: 25px;
 }
+
+@media screen and (max-width: 900px) {
+    .social_feed_container {
+        display: none;
+    }
+}
