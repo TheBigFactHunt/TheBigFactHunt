@@ -2,9 +2,9 @@
 
 .supportForm {
     display: flex;
-    justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding-top: 15%;
 }
 
 #name {
@@ -16,9 +16,7 @@
 }
 
 #message {
-    width: 350px;
-    height: 150px;
-    padding-bottom: 130px;
+    width: 350px;;
 }
 
 #submit {
