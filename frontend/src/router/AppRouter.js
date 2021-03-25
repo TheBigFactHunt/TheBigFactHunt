@@ -26,7 +26,7 @@ const AppRouter = () => {
   return (
     <BrowserRouter>
       <div className="container">
-        <Sidebar user={user}/>
+        <Sidebar user={user} />
         {user._id ? null : <Header />}
         <div className="container">
           <Switch>
@@ -84,18 +84,18 @@ const AppRouter = () => {
               render={(props) => (
                 <ExpertQuiz {...props} user={user} updateUser={updateUser} />
               )}
-              path="/expertquiz" />
-            <Route render={(props) => (
-              <Support {...props} user={user} updateUser={updateUser} />
+              path="/expertquiz"
+            />
+            <Route
+              render={(props) => (
+                <Support {...props} user={user} updateUser={updateUser} />
               )}
-              path="/support" />
+              path="/support"
+            />
             <Route render={() => <Redirect to="/" />} />
           </Switch>
           {/* to be moved */}
-          <div className="individual_components">
-            <Social_feed />
-            <HighScore />
-          </div>
+          <div className="individual_components"></div>
           <div className="footerContainer">
             <Footer />
           </div>
