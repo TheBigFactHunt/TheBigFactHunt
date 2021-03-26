@@ -53,6 +53,11 @@ export const SidebarData = [
     ],
   },
   {
+    title: "About",
+    path: "/about",
+    icon: <GiDuck.GiTeamIdea />,
+  },
+  {
     title: "Support",
     path: "/support",
     icon: <IoIcons.IoMdHelpCircle />,

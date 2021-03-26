@@ -1,0 +1,28 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#aboutTitle {
+    text-align: center;
+}
+#aboutText {
+    width: 500px;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 30px;
+    margin-left: 37%;
+}
+
+#ghLink {
+    font-size: 45px;
+    text-decoration: none;
+    color: seagreen;
+}
+
+#codenation {
+    text-decoration: none;
+}
+
