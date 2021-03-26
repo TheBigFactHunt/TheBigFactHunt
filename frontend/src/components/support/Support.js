@@ -45,6 +45,8 @@ class Support extends Component {
         let buttonText = this.state.status;
         return (      
             <form className="supportForm" onSubmit={this.handleSubmit.bind(this)} method="POST">
+              <h2> If you have any suggestion, feedback or have any technical issues please let us know!</h2>
+              <br></br>
                 <div>
                 <p id="name">Name</p>
                 <label htmlFor="name"></label>

@@ -24,7 +24,7 @@ const Login = (props) => {
             props.updateUser(resData);
             localStorage.setItem("first_name", resData.first_name)
             localStorage.setItem("last_name", resData.last_name)
-            localStorage.setItem("_id", resData._id);
+            localStorage.setItem("userId", resData._id);
             history.push("/home");
         } catch (error) {
             console.log(error);
