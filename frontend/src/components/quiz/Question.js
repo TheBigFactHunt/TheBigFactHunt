@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Swal from 'sweetalert2';
 
 const Question = (props) => {
   return (
@@ -9,9 +10,12 @@ const Question = (props) => {
         onClick={() => {
           if(props.question.correct_answer == "True"){
               props.setScore(props.score + 1)
-          }
+              Swal.fire("Correct!")
+              props.setCounter(props.counter+1)
+          } else {
           props.setCounter(props.counter+1)
-
+          Swal.fire("Sorry, wrong answer")
+          }
         }}
       >True
       </button>
@@ -19,9 +23,12 @@ const Question = (props) => {
         id="answerButton"
         onClick={() => {
           if(props.question.correct_answer == "False"){
-              (props.setScore(props.score + 1))
-          }
+              props.setScore(props.score + 1)
+              Swal.fire("Correct!")
+              props.setCounter(props.counter+1)
+          } else {
           props.setCounter(props.counter+1)
+          }
         }}
       >
         False
