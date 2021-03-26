@@ -3,6 +3,7 @@ import SubmitScore from "./submitScore";
 import Question from "./Question";
 import "./quiz.css";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
+import Timer from "../timer/Timer";
 
 const ProQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
@@ -30,6 +31,7 @@ const ProQuiz = (props) => {
         />
       </h3>
       <h2 id="scoreCounter">Score: {score}</h2>
+      {counter < 10 ? (<Timer />) : null}
       {questions.length > 0 && counter < 10 ? (
         <Question
           question={questions[counter]}
