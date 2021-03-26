@@ -1,9 +1,14 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
+import Swal from 'sweetalert2';
 import "./timer.css";
 
 function Timer() {
     const [counter, setCounter] = React.useState(60);
+    const timeUp = () => {
+        if (counter === 0)
+            Swal.fire("Times up!");
+        }
 
     
     React.useEffect(() => {
@@ -12,15 +17,11 @@ function Timer() {
         return () => clearInterval(timer);
     }, [counter]);
 
-    const timeUp = () => {
-        if (counter === 0)
-            return ("Time's Up!");    
-        }
 
     return (
         <div className="timer">
             <div id="quizTimer">Time Left: {counter}</div>
-            {timeUp}
+            {timeUp(counter)}
         </div>
     );
 }
