@@ -19,10 +19,6 @@ const EasyQuiz = (props) => {
     };
     getter();
   }, []);
-
-  // if (counter >= 10) {
-  //     // display SCORE, post SCORE to back end, display leaderboard (add user score to leaderboard) & then render a new quiz or take back to Home
-  // } else {
   return (
     <div className="quizWrapper">
       <h3 className="classlogo">
@@ -44,25 +40,9 @@ const EasyQuiz = (props) => {
           setCounter={setCounter}
         />
       ) : null}
+      <br></br>
+      {counter >=10 ? <SubmitScore score={score} /> : null }
     </div>
   );
 };
-// }  / for lines 18-20
 export default EasyQuiz;
-   // if (counter >= 10) {
-    //     // display SCORE, post SCORE to back end, display leaderboard (add user score to leaderboard) & then render a new quiz or take back to Home
-    // } else {
-            return (
-        <div className="quizWrapper">
-            <div className="questionDiv">
-            <h2 id="scoreCounter">Score: {score}</h2>
-               {questions.length > 0 && counter <10 ? 
-               <Question question={questions[counter]} score={score} setScore={setScore} counter={counter} setCounter={setCounter}/> : null } <br></br>
-               {counter >=10 ? <SubmitScore score={score} /> : null }
-            </div>
-            </div>
-    )
-}
-
-export default EasyQuiz;
-
