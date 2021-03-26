@@ -12,6 +12,7 @@ import EasyQuiz from "../components/quiz/EasyQuiz";
 import ProQuiz from "../components/quiz/ProQuiz";
 import ExpertQuiz from "../components/quiz/ExpertQuiz";
 import Support from "../components/support/Support";
+import About from "../components/about/About";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import "animate.css";
 const AppRouter = () => {
@@ -91,6 +92,12 @@ const AppRouter = () => {
                 <Support {...props} user={user} updateUser={updateUser} />
               )}
               path="/support"
+            />
+            <Route
+              render={(props) => (
+                <About {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/about"
             />
             <Route render={() => <Redirect to="/" />} />
           </Switch>
