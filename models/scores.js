@@ -7,10 +7,10 @@ const scoreSchema = mongoose.Schema(
             type: Number,
             required: true,
         },
-        user_highscore: {
-            type: Number,
-            required: true,
-        },
+        // user_highscore: {    -- commented out for now
+        //     type: Number,
+        //     required: true,
+        // },
         user_id: {
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User',

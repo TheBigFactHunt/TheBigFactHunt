@@ -1,31 +1,31 @@
-import React from "react";
-
+import React, { useState } from 'react';
+import axios from 'axios';
+import { SCORES_API_URL } from '../../utils/constants';
+import { Button } from 'react-bootstrap';
+import Swal from 'sweetalert2';
 
 const SubmitScore = (props) => {
-
-}
-
-// below code needs editing to fit posting scores to back end
-// const onSubmit = async (data) => {
-//     console.log(data);
-
-//     try {
-//         const response = await axios.post(`${BASE_API_URL}/login`, data);
-//         const resData = await response.data
-//         setSuccessMessage("User logged in");
-//         setErrorMessage('');
-//         props.updateUser(resData);
-//         localStorage.setItem("first_name", resData.first_name)
-//         localStorage.setItem("last_name", resData.last_name)
-//         localStorage.setItem("_id", resData._id);
-//         history.push("/home");
-//     } catch (error) {
-//         console.log(error);
-//         if (error.response) {
-//             console.log("Error", error.response.data);
-//             setErrorMessage(error.response.data);
+    const postScore = async () => {
+        const data = {user_id:localStorage.getItem("userId"), user_score:props.score}
+        try {
+            const response = await axios.post(`${SCORES_API_URL}`, data);
+            const resData = await response.data
+            console.log(resData)
+            Swal.fire("Score submitted successfully, high scores are displayed on the leaderboard")
+        } catch (error) {
+            console.log(error);
         }
+        
     }
+    
+    return (
+        <div className="parentDiv">
+               <h1> Press the button below to submit your scores! </h1>
+                <h3>High scores are displayed on the Home Page </h3>
+                <Button onClick={postScore} className="nextButton" variant="primary" type="submit" >
+                    Submit Score
+            </Button>
+        </div>
+    ) 
 }
-
 export default SubmitScore;
