@@ -7,11 +7,10 @@ import { SidebarData } from "./SidebarData";
 import SubMenu from "./subMenu";
 import { IconContext } from "react-icons/lib";
 import Searchbar from "./Searchbar";
-import "./Sidebar.css";
+import "./sidebar.css";
 
 const Nav = styled.div`
   background-color: #3a2b5c;
-
   width: 100%;
   height: 110px;
   display: flex;

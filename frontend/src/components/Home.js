@@ -8,7 +8,12 @@ const Home = (props) => {
   return (
     <div className="homeContainer">
       <div className="logoContainer">
-        <img id="logoImg" src={Logo} alt="Logo image" />
+        <img
+          id="logoImg"
+          src={Logo}
+          className="animate__animated animate__heartBeat"
+          alt=""
+        />
       </div>
       <div className="individual_components">
         <Social_feed />
