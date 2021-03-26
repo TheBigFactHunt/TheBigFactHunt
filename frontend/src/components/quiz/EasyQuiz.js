@@ -4,7 +4,7 @@ import "./quiz.css";
 import "./easyquiz.css";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
 import SubmitScore from "./submitScore";
-import SocialPost from "../social_feed/Social_posts";
+import SocialPost from "../social_feed/social_posts";
 
 import Timer from "../timer/Timer";
 
