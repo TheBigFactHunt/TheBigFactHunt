@@ -1,4 +1,4 @@
-import "./Social_feed.css";
+import "./social_feed.css";
 import React, { useState } from "react";
 import Dummy_feed from "./dummy_social";
 
