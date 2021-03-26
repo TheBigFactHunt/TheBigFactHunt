@@ -13,7 +13,7 @@ import ProQuiz from "../components/quiz/ProQuiz";
 import ExpertQuiz from "../components/quiz/ExpertQuiz";
 import Support from "../components/support/Support";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
-
+import "animate.css";
 const AppRouter = () => {
   const [user, setUser] = useState({});
   const updateUser = (data) => {
