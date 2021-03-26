@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Question from "./Question";
 import "./quiz.css";
+import "./easyquiz.css";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
 import SubmitScore from './submitScore'
 import SocialPost from '../social_feed/social_posts'
-
+import SubmitScore from "./submitScore";
+import Timer from "../timer/Timer";
 
 const EasyQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
@@ -32,7 +34,11 @@ const EasyQuiz = (props) => {
         />
       </h3>
 
+
       <h2 id="scoreCounter">Score: {score} / {counter} </h2>
+
+      {counter < 10 ? (<Timer />) : null}
+
       {questions.length > 0 && counter < 10 ? (
         <Question
           question={questions[counter]}
@@ -49,4 +55,5 @@ const EasyQuiz = (props) => {
     </div>
   );
 };
+
 export default EasyQuiz;

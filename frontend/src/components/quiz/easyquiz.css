@@ -25,6 +25,19 @@
   color: cyan;
   width: 350px;
 }
-.classlogo {
-  box-shadow: none;
+h2 {
+}
+.pQuestion {
+  border: chartreuse solid 4px;
+  color: yellow;
+  text-shadow: blue 3px 3px 3px;
+  background-image: url(https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80);
+  font-size: xx-large;
+  max-height: 110vh;
+  max-width: 45vh;
+  align-items: center;
+  margin-left: 69vh;
+  background-color: transparent;
+  border-radius: 30px;
+  box-shadow: 10px 10px 10px 10px black;
 }
