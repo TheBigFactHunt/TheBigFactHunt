@@ -42,7 +42,7 @@ h2 {
   box-shadow: 10px 10px 10px 10px black;
 }
 .trueButton:hover {
-  background-image: url(https://avatars.githubusercontent.com/u/2406326?s=460&u=c1ae4a8e1042d3c9d4f00d8af49a8e7355a34731&v=4);
+  background-image: url(https://u.photofunia.com/1/results/z/f/zfV9hQhavFrqpm0lfe1Dlg_r.jpg);
 }
 .trueButton {
   height: 10vh;
@@ -55,6 +55,7 @@ h2 {
 }
 .falseButton {
   height: 10vh;
+  transition: ease-in-out;
   width: 13vh;
   margin-left: 10vh;
   margin-top: 2vh;
@@ -64,5 +65,9 @@ h2 {
   background-image: url(https://u.photofunia.com/1/results/y/i/yilmnusYLUJHrocShkeMvQ_r.jpg);
 }
 .falseButton:hover {
-  background-image: url(https://www.memesmonkey.com/images/memesmonkey/4e/4e51f0cf33c0d98f7d9f2d361b013e85.jpeg);
+  transition: ease-in-out;
+  background-image: url(https://u.photofunia.com/1/results/i/n/invLqs-8jOisM-FlgpJXdQ_r.jpg);
+}
+.quizlogo {
+  height: 25vh;
 }

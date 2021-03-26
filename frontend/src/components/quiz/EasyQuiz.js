@@ -30,7 +30,6 @@ const EasyQuiz = (props) => {
           id="logoImg"
           src={Logo}
           className="animate__animated animate__rotateIn"
-          alt="quizlogo"
         />
       </h3>
 
