@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Question from "./Question";
 import "./quiz.css";
+import SubmitScore from './submitScore'
 
 const EasyQuiz = (props) => {
 
@@ -20,10 +21,14 @@ const EasyQuiz = (props) => {
     // } else {
             return (
         <div className="quizWrapper">
-                <h2 id="scoreCounter">Score: {score}</h2>
-               {questions.length > 0 && counter <10 ? <Question question={questions[counter]} score={score} setScore={setScore} counter={counter} setCounter={setCounter}/> : null }  
-        </div>
+            <div className="questionDiv">
+            <h2 id="scoreCounter">Score: {score}</h2>
+               {questions.length > 0 && counter <10 ? 
+               <Question question={questions[counter]} score={score} setScore={setScore} counter={counter} setCounter={setCounter}/> : null } <br></br>
+               {counter >=10 ? <SubmitScore score={score} /> : null }
+            </div>
+            </div>
     )
 }
-// }  / for lines 18-20
+
 export default EasyQuiz;
