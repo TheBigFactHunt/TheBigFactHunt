@@ -3,9 +3,9 @@ import Question from "./Question";
 import "./quiz.css";
 import "./easyquiz.css";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
-import SubmitScore from './submitScore'
-import SocialPost from '../social_feed/social_posts'
 import SubmitScore from "./submitScore";
+import SocialPost from "../social_feed/Social_posts";
+
 import Timer from "../timer/Timer";
 
 const EasyQuiz = (props) => {
@@ -34,10 +34,11 @@ const EasyQuiz = (props) => {
         />
       </h3>
 
+      <h2 id="scoreCounter">
+        Score: {score} / {counter}{" "}
+      </h2>
 
-      <h2 id="scoreCounter">Score: {score} / {counter} </h2>
-
-      {counter < 10 ? (<Timer />) : null}
+      {counter < 10 ? <Timer /> : null}
 
       {questions.length > 0 && counter < 10 ? (
         <Question
@@ -49,9 +50,11 @@ const EasyQuiz = (props) => {
         />
       ) : null}
       <br></br>
-      {counter >=10 ? <SubmitScore score={score} /> : null }
+      {counter >= 10 ? <SubmitScore score={score} /> : null}
       <br></br>
-      {counter >=10 ? <SocialPost score={score} name={props.first_name} /> : null}
+      {counter >= 10 ? (
+        <SocialPost score={score} name={props.first_name} />
+      ) : null}
     </div>
   );
 };
