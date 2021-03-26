@@ -1,12 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Searchbar.css";
 
-function Searchbar() {
+const Searchbar = ({ getQuery }) => {
+  const [text, setText] = useState("");
+
+  const onChange = (q) => {
+    setText(q);
+    getQuery(q);
+  };
+
   return (
-    <div>
-      <input className="searchbar" id="Searchtag" placeholder="Search" />
-    </div>
+    <section className="search">
+      <form>
+        <input
+          type="text"
+          className="searchbar"
+          placeholder="Search"
+          value={text}
+          onChange={(e) => onChange(e.target.value)}
+          autoFocus
+        />
+      </form>
+    </section>
   );
-}
+};
 
 export default Searchbar;
