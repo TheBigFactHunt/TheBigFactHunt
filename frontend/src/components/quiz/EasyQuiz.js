@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Question from "./Question";
 import "./quiz.css";
+import "./easyquiz.css";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
-import SubmitScore from './submitScore'
-
+import SubmitScore from "./submitScore";
 
 const EasyQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
@@ -41,8 +41,9 @@ const EasyQuiz = (props) => {
         />
       ) : null}
       <br></br>
-      {counter >=10 ? <SubmitScore score={score} /> : null }
+      {counter >= 10 ? <SubmitScore score={score} /> : null}
     </div>
   );
 };
+
 export default EasyQuiz;
