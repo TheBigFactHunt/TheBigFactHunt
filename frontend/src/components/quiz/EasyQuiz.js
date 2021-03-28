@@ -16,7 +16,7 @@ const EasyQuiz = (props) => {
   useEffect(() => {
     const getter = async () => {
       const response = await fetch(
-        `https://opentdb.com/api.php?amount=10&category=9&difficulty=easy&type=boolean`
+        `https://opentdb.com/api.php?amount=25&category=9&difficulty=easy&type=boolean`
       );
       const data = await response.json();
       setQuestions(data.results);
@@ -34,12 +34,12 @@ const EasyQuiz = (props) => {
       </h3>
 
       <h2 id="scoreCounter">
-        Score: {score} / {counter}{" "}
+        Score: {score} / 25{" "}
       </h2>
 
-      {counter < 10 ? <Timer /> : null}
+      {counter < 25 ? <Timer /> : null}
 
-      {questions.length > 0 && counter < 10 ? (
+      {questions.length > 0 && counter < 25 ? (
         <Question
           question={questions[counter]}
           score={score}
@@ -49,9 +49,9 @@ const EasyQuiz = (props) => {
         />
       ) : null}
       <br></br>
-      {counter >= 10 ? <SubmitScore score={score} /> : null}
+      {counter >= 25 ? <SubmitScore score={score} /> : null}
       <br></br>
-      {counter >= 10 ? (
+      {counter >= 25 ? (
         <SocialPost score={score} name={props.first_name} />
       ) : null}
     </div>
