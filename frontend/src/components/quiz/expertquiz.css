@@ -25,6 +25,6 @@
   color: cyan;
   width: 350px;
 }
-.logo1 {
-  height: 10vh;
+[alt="logo1"] {
+  height: 30vh;
 }

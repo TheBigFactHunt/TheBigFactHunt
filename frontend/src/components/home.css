@@ -23,3 +23,6 @@ h4 {
   background-size: cover;
   background-image: url("./quiz/imgs/register.jpg");
 }
+[alt="logo1"] {
+  height: 30vh;
+}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SubmitScore from "./submitScore";
 import Question from "./Question";
-import "./quiz.css";
+import "./proquiz.css";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
 import Timer from "../timer/Timer";
 
@@ -26,8 +26,8 @@ const ProQuiz = (props) => {
         <img
           id="logoImg"
           src={Logo}
-          className="animate__animated animate__tada"
-          alt="quizlogo"
+          className="animate__animated animate__jackInTheBox"
+          alt="prologo"
         />
       </h3>
       <h2 id="scoreCounter">Score: {score}</h2>

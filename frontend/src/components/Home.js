@@ -11,9 +11,8 @@ const Home = (props) => {
         <img
           id="logoImg"
           src={Logo}
-          className="animate__animated animate__heartBeat"
-          className="logo1"
-          alt=""
+          className="animate__animated animate__flip"
+          alt="logo1"
         />
       </div>
       <div className="individual_components">
