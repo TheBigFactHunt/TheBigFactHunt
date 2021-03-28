@@ -27,7 +27,7 @@ const ExpertQuiz = (props) => {
           id="logoImg"
           src={Logo}
           className="animate__animated animate__hinge"
-          alt="quizlogo"
+          alt="logo1"
         />
       </h3>
       <h2 id="scoreCounter">Score: {score} / 125</h2>

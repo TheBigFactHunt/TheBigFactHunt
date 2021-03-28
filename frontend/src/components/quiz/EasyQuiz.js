@@ -25,11 +25,12 @@ const EasyQuiz = (props) => {
   }, []);
   return (
     <div className="quizWrapper">
-      <h3 className="classlogo">
+      <h3 className="easylogo">
         <img
           id="logoImg"
           src={Logo}
           className="animate__animated animate__rotateIn"
+          alt="easylogo"
         />
       </h3>
 

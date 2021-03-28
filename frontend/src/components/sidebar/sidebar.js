@@ -19,7 +19,7 @@ const Nav = styled.div`
 
 const NavIcon = styled(Link)`
   margin-left: 2rem;
-  color: #fcad5a;
+  color: #adff2f;
   font-size: 2rem;
   height: 80px;
   display: flex;
@@ -28,13 +28,14 @@ const NavIcon = styled(Link)`
 `;
 const SidebarNav = styled.nav`
   box-shadow: 5px 5px 5px 5px black;
+
+  opacity: 0.85;
   background-image: url(https://wallpaperaccess.com/full/439751.jpg);
   border-radius: 45px;
   margin-top: 20vh;
   width: 250px;
   margin-left: 2vh;
   height: 70vh;
-  color: #fcad5a;
   display: flex;
   justify-content: center;
   position: fixed;

@@ -42,7 +42,7 @@ h2 {
   box-shadow: 10px 10px 10px 10px black;
 }
 .trueButton:hover {
-  background-image: url(https://u.photofunia.com/1/results/z/f/zfV9hQhavFrqpm0lfe1Dlg_r.jpg);
+  background-image: url("./imgs/hoverlogo.jpg");
 }
 .trueButton {
   height: 10vh;
@@ -58,16 +58,19 @@ h2 {
   transition: ease-in-out;
   width: 13vh;
   margin-left: 10vh;
-  margin-top: 2vh;
+  padding-top: vh;
   box-shadow: 2px 2px 2px 2px darkred;
   border-radius: 45px;
-  background-size: cover;
-  background-image: url(https://u.photofunia.com/1/results/y/i/yilmnusYLUJHrocShkeMvQ_r.jpg);
+  background-size: 115%;
+  background-image: url("./imgs/falsepic.jpg");
 }
 .falseButton:hover {
   transition: ease-in-out;
-  background-image: url(https://u.photofunia.com/1/results/i/n/invLqs-8jOisM-FlgpJXdQ_r.jpg);
+  background-image: url("./imgs/hoverfalse.jpg");
 }
 .quizlogo {
   height: 25vh;
+}
+[alt="easylogo"] {
+  height: 30vh;
 }
