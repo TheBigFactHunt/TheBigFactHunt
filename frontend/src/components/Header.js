@@ -4,9 +4,9 @@ import "animate.css";
 
 const Header = () => (
   <div>
-    <h1 className="animate__animated animate__backInDown">
-      Register now for access to our Quiz!
-    </h1>
+    <h4 className="animate__animated animate__backInDown">
+      {/* Register now for access to our Quiz! */}
+    </h4>
 
     <Progress />
   </div>

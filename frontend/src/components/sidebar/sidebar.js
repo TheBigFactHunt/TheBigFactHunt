@@ -10,7 +10,6 @@ import Searchbar from "./Searchbar";
 import "./sidebar.css";
 
 const Nav = styled.div`
-  background-color: #3a2b5c;
   width: 100%;
   height: 110px;
   display: flex;
@@ -29,7 +28,7 @@ const NavIcon = styled(Link)`
 `;
 const SidebarNav = styled.nav`
   box-shadow: 5px 5px 5px 5px black;
-  background-color: #3a2b5c;
+  background-image: url(https://wallpaperaccess.com/full/439751.jpg);
   border-radius: 45px;
   margin-top: 20vh;
   width: 250px;
