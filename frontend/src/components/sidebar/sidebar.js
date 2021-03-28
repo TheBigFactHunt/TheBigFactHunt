@@ -58,7 +58,13 @@ const Sidebar = (props) => {
             <FaIcons.FaBars onClick={showSidebar} className="sidelogo" />
           </NavIcon>
 
-          <Searchbar />
+
+
+          {/* <Searchbar /> */}
+
+          <a id="signUpButton" href="/signup">
+            Sign Up
+          </a>
 
           {props.user.first_name ? (
             <span>

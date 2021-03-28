@@ -3,7 +3,7 @@ import Question from "./Question";
 import "./quiz.css";
 import "./easyquiz.css";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
-import SocialPost from "../social_feed/Social_posts";
+import SocialPost from "../social_feed/social_posts";
 import SubmitScore from "./submitScore";
 
 import Timer from "../timer/Timer";

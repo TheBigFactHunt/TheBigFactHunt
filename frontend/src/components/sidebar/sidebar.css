@@ -7,11 +7,24 @@
 }
 
 #loginInfo {
-  padding-left: 50px;
+  padding-left: 100px;
+  color: rgb(255, 89, 47);
+  font-size: 30px;
+}
+
+#loginButton {
+  padding-left: 100px;
   color: greenyellow;
   font-size: 30px;
 }
 .sidebarNav {
   min-height: 20vh;
   border-radius: 45px;
+}
+
+#signUpButton {
+  text-align: center;
+  color: greenyellow;
+  font-size: 30px;
+  padding-left: 800px;
 }
