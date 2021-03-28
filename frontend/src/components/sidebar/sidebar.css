@@ -1,5 +1,5 @@
 .loginbutton {
-  color: #fcad5a;
+  color: deeppink;
   text-shadow: 2px 2px 2px 2px;
   font-size: 20px;
   width: 300px;
@@ -14,4 +14,8 @@
 .sidebarNav {
   min-height: 20vh;
   border-radius: 45px;
+}
+* {
+  text-shadow: 1px 2px black;
+  color: #adff2f;
 }

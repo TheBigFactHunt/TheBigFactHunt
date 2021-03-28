@@ -1,27 +1,30 @@
 .quizListContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 #quiz1 {
-    font-size: 30px;
-    text-decoration: none;
-    color: chartreuse;
-    width: 350px;
+  font-size: 30px;
+  text-decoration: none;
+  color: chartreuse;
+  width: 350px;
 }
 
 #quiz2 {
-    font-size: 30px;
-    text-decoration: none;
-    color: crimson;
-    width: 350px;
+  font-size: 30px;
+  text-decoration: none;
+  color: crimson;
+  width: 350px;
 }
 
 #quiz3 {
-    font-size: 30px;
-    text-decoration: none;
-    color: cyan;
-    width: 350px;
+  font-size: 30px;
+  text-decoration: none;
+  color: cyan;
+  width: 350px;
+}
+[alt="prologo"] {
+  height: 30vh;
 }
