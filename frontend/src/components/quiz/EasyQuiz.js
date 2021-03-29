@@ -5,7 +5,6 @@ import "./easyquiz.css";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
 import SocialPost from "../social_feed/social_posts";
 import SubmitScore from "./submitScore";
-
 import Timer from "../timer/Timer";
 
 const EasyQuiz = (props) => {
@@ -23,6 +22,7 @@ const EasyQuiz = (props) => {
     };
     getter();
   }, []);
+
   return (
     <div className="quizWrapper">
       <h3 className="easylogo">
@@ -40,7 +40,7 @@ const EasyQuiz = (props) => {
 
       {counter < 25 ? <Timer /> : null}
 
-      {questions.length > 0 && counter < 25 ? (
+      {questions.length > 0 && counter < 25 && !props.timeCounter > 0 ? (
         <Question
           question={questions[counter]}
           score={score}
@@ -52,9 +52,8 @@ const EasyQuiz = (props) => {
       <br></br>
       {counter >= 25 ? <SubmitScore score={score} /> : null}
       <br></br>
-      {counter >= 25 ? (
-        <SocialPost score={score} name={props.first_name} />
-      ) : null}
+      {counter >= 25 ? (<SocialPost score={score} name={props.first_name} />) : null}
+      {/* {props.timeCounter == 0 ? questions.display = "none" : null} */}
     </div>
   );
 };
