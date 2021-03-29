@@ -32,11 +32,11 @@ h2 {
   color: yellow;
   text-shadow: blue 3px 3px 3px;
   background-image: url(https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80);
-  font-size: xx-large;
-  max-height: 110vh;
-  max-width: 45vh;
+  font-size: 30px;
+  max-height: 140vh;
+  max-width: 70%;
   align-items: center;
-  margin-left: 69vh;
+  margin-left: 15%;
   background-color: transparent;
   border-radius: 30px;
   box-shadow: 10px 10px 10px 10px black;
@@ -47,11 +47,12 @@ h2 {
 .trueButton {
   height: 10vh;
   width: 15vh;
-  margin-top: 2vh;
+  margin-top: 5%;
   box-shadow: 2px 2px 2px 2px darkgreen;
   border-radius: 45px;
   background-size: cover;
   background-image: url("./imgs/truepic.jpg");
+  outline: none;
 }
 .falseButton {
   height: 10vh;
@@ -63,6 +64,7 @@ h2 {
   border-radius: 45px;
   background-size: 115%;
   background-image: url("./imgs/falsepic.jpg");
+  outline: none;
 }
 .falseButton:hover {
   transition: ease-in-out;
@@ -73,4 +75,13 @@ h2 {
 }
 [alt="easylogo"] {
   height: 30vh;
+}
+
+.quizWrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: greenyellow;
+  padding: 5%;
+  font-size: 2rem;
 }
