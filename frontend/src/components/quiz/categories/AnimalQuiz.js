@@ -10,6 +10,7 @@ const AnimalQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
   const [counter, setCounter] = useState(0);
   const [score, setScore] = useState(0);
+  const [timeCounter, setTime] = useState(30);
   const difficulty = "easy";
   useEffect(() => {
     const getter = async () => {
@@ -36,9 +37,9 @@ const AnimalQuiz = (props) => {
         Score: {score} / 10{" "}
       </h2>
 
-      {counter < 10 ? <Timer /> : null}
+      {counter < 10 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
 
-      {questions.length > 0 && counter < 10 ? (
+      {questions.length > 0 && counter < 10 && timeCounter > 0 ? (
         <Question
           question={questions[counter]}
           score={score}
