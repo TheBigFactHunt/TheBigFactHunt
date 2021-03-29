@@ -13,6 +13,11 @@ import ProQuiz from "../components/quiz/ProQuiz";
 import ExpertQuiz from "../components/quiz/ExpertQuiz";
 import Support from "../components/support/Support";
 import About from "../components/about/About";
+import Film from "../components/quiz/categories/FilmQuiz";
+import Science from "../components/quiz/categories/ScienceQuiz";
+import Animals from "../components/quiz/categories/AnimalQuiz";
+import Music from "../components/quiz/categories/MusicQuiz";
+import History from "../components/quiz/categories/HistoryQuiz";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import "animate.css";
 const AppRouter = () => {
@@ -69,13 +74,6 @@ const AppRouter = () => {
             />
             <Route
               render={(props) => (
-                <Quiz {...props} user={user} updateUser={updateUser} />
-              )}
-              path="/quiz"
-            />
-
-            <Route
-              render={(props) => (
                 <EasyQuiz {...props} user={user} updateUser={updateUser} />
               )}
               path="/easyquiz"
@@ -104,6 +102,37 @@ const AppRouter = () => {
               )}
               path="/about"
             />
+            <Route
+              render={(props) => (
+                <Animals {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/animals"
+            />
+            <Route
+              render={(props) => (
+                <Film {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/film"
+            />
+            <Route
+              render={(props) => (
+                <History {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/history"
+            />
+            <Route
+              render={(props) => (
+                <Music {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/music"
+            />
+            <Route
+              render={(props) => (
+                <Science {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/science"
+            />
+
             <Route render={() => <Redirect to="/" />} />
           </Switch>
           {/* to be moved */}
