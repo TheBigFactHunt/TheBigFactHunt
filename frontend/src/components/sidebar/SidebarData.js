@@ -53,6 +53,41 @@ export const SidebarData = [
     ],
   },
   {
+    title: "Categories",
+    icon: <FaQuestion.FaList />,
+
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+
+    subNav: [
+      {
+        title: "Animals",
+        path: "/animals",
+        icon: <GiDuck.GiCow/>,
+      },
+      {
+        title: "Film",
+        path: "/film",
+        icon: <GiDuck.GiVideoCamera/>,
+      },
+      {
+        title: "History",
+        path: "/history",
+        icon: <GiDuck.GiCannon />,
+      },
+      {
+        title: "Music",
+        path: "/music",
+        icon: <GiDuck.GiMusicalNotes />,
+      },
+      {
+        title: "Science",
+        path: "/science",
+        icon: <GiDuck.GiMadScientist />,
+      },
+    ],
+  },
+  {
     title: "About",
     path: "/about",
     icon: <GiDuck.GiTeamIdea />,
