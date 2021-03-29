@@ -14,8 +14,6 @@ router.post('/', async (req,res) => {
 })
 
 router.get('/', (request, response) => {
-    //one score per one user
-    //multiple users
     
     Scores.find({}).sort({date: 'descending'}).limit(5).exec((err, scores) => { 
         if (err) {

@@ -11,13 +11,9 @@ const Social_feed = () => {
     const userScore = async () => {
       const response = await fetch(SCORES_API_URL);
       const data = await response.json();
-      // const IDresponse = await fetch(BASE_API_URL);
-      // const IDdata = await IDresponse.json();
-      // console.log(IDdata);
       console.log(data);
       setPostList(data.scores);
       console.log(data.scores)
-      // setUserPostList(IDdata.users);
     };
     userScore();
   }, []);

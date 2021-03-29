@@ -5,11 +5,6 @@ const Dummy_feed = (props) => {
     console.log(post);
     return <Post key={index} userScore={post.user_score} userName={post.first_name}/>;
   });
-  // const user = props.users.map((user, index) => {
-  //   console.log(user);
-
-  //   return <Post key={index} first_name={user.first_name} />;
-  // });
 
   return (
     <div className="social_feed_wrapper">
