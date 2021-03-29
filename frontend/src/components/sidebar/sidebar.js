@@ -51,6 +51,11 @@ const Sidebar = (props) => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+
+  const logOut = () => {
+    localStorage.clear()
+  }
+
   return (
     <>
       <IconContext.Provider value={({ color: "#f0e130" }, { size: "4vh" })}>
@@ -72,7 +77,7 @@ const Sidebar = (props) => {
               <p id="loginInfo">
                 {props.user.first_name} {props.user.last_name}
               </p>
-              <a className="loginbutton" id="loginButton" href="/login">
+              <a className="loginbutton" onClick={logOut} id="loginButton" href="/login">
                 Sign Out
               </a>{" "}
             </span>

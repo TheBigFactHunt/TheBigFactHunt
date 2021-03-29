@@ -11,6 +11,7 @@ const EasyQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
   const [counter, setCounter] = useState(0);
   const [score, setScore] = useState(0);
+  const [timeCounter, setTime] = useState(60);
   const difficulty = "easy";
   useEffect(() => {
     const getter = async () => {
@@ -38,9 +39,9 @@ const EasyQuiz = (props) => {
         Score: {score} / 25{" "}
       </h2>
 
-      {counter < 25 ? <Timer /> : null}
+      {counter < 25 ? <Timer timeCounter={timeCounter} setTime={setTime} /> : null}
 
-      {questions.length > 0 && counter < 25 && !props.timeCounter > 0 ? (
+      {questions.length > 0 && counter < 25 && timeCounter > 0 ? (
         <Question
           question={questions[counter]}
           score={score}
@@ -53,7 +54,7 @@ const EasyQuiz = (props) => {
       {counter >= 25 ? <SubmitScore score={score} /> : null}
       <br></br>
       {counter >= 25 ? (<SocialPost score={score} name={props.first_name} />) : null}
-      {/* {props.timeCounter == 0 ? questions.display = "none" : null} */}
+      {/* {props.timeCounter >= 0 ? questions.display = "none" : null} */}
     </div>
   );
 };
