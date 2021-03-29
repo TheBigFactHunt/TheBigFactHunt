@@ -15,7 +15,16 @@ const scoreSchema = mongoose.Schema(
             type: mongoose.Schema.Types.ObjectId,
             ref: 'User',
             required: true
-        }
+        },
+        date:{
+            type: Date, 
+            required: true
+        },
+        first_name: {
+            type: String,
+            required: true,
+            trim: true
+        },
     }
 );
 const Scores = mongoose.model('Scores', scoreSchema);

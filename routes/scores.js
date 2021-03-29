@@ -12,4 +12,18 @@ router.post('/', async (req,res) => {
         }
     })
 })
+
+router.get('/', (request, response) => {
+    //one score per one user
+    //multiple users
+    
+    Scores.find({}).sort({date: 'descending'}).limit(5).exec((err, scores) => { 
+        if (err) {
+            console.log(err);
+            response.status(500).json({status: 'Error', err })
+        } else {
+            response.status(200).json({ status: 'Success!', scores });
+        }
+    })
+})
 module.exports = router;

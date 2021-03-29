@@ -1,21 +1,19 @@
 import Post from "./social_posts";
-import insta from "./insta.png";
 
 const Dummy_feed = (props) => {
-  //this maps over the postlist from social_feed
-  const posts = props.posts.map((post) => {
-    return (
-      //as post is passed in above need to then give a name to each of the object keys which is passed into Post in social_posts
-      <Post textTitle={post.textTitle} textBody={post.textBody} />
-    );
+  const posts = props.posts.map((post, index) => {
+    console.log(post);
+    return <Post key={index} userScore={post.user_score} userName={post.first_name}/>;
   });
+  // const user = props.users.map((user, index) => {
+  //   console.log(user);
+
+  //   return <Post key={index} first_name={user.first_name} />;
+  // });
 
   return (
-    //this will then create posts
     <div className="social_feed_wrapper">
-      <h3 className="post_head">
-        Instagram <img className="instaImg" src={insta} alt="Instagram logo" />
-      </h3>
+      <h3 className="post_head">Social Feed</h3>
       {posts}
     </div>
   );

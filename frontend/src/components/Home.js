@@ -3,8 +3,10 @@ import Logo from "../images/logos/logo-small-yellow+purple.png";
 import Social_feed from "../components/social_feed/social_feed";
 import HighScore from "../components/highScore/highScore";
 import "./home.css";
+
+
 const Home = (props) => {
-  console.log(props);
+
   return (
     <div className="homeContainer">
       <div className="logoContainer">

@@ -43,4 +43,16 @@ router.post('/login', async (req, res) => {
     }
 });
 
+router.get('/', (request, response) => {
+    
+    User.find({}).sort({first_name: 'descending'}).limit(5).exec((err, _id) => { 
+        if (err) {
+            console.log(err);
+            response.status(500).json({status: 'Error', err })
+        } else {
+            response.status(200).json({ status: 'Success!', _id });
+        }
+    })
+})
+
 module.exports = router;

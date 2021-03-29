@@ -1,27 +1,28 @@
 import "./social_feed.css";
-import React, { useState } from "react";
 import Dummy_feed from "./dummy_social";
+import { BASE_API_URL, SCORES_API_URL } from "../../utils/constants";
+import { useState, useEffect } from "react";
 
 const Social_feed = () => {
-  // this will create the information for each post as an object {}
-  const [postList, setPostList] = useState([
-    // each object will be created here
-    {
-      textTitle: "Test1",
-      textBody: "Body test1",
-    },
-    {
-      textTitle: "Test2",
-      textBody: "Body test2",
-    },
-    {
-      textTitle: "Test3",
-      textBody: "Body test3",
-    },
-  ]);
+  const [postList, setPostList] = useState([]);
+  // const [userPostList, setUserPostList] = useState([]);
+
+  useEffect(() => {
+    const userScore = async () => {
+      const response = await fetch(SCORES_API_URL);
+      const data = await response.json();
+      // const IDresponse = await fetch(BASE_API_URL);
+      // const IDdata = await IDresponse.json();
+      // console.log(IDdata);
+      console.log(data);
+      setPostList(data.scores);
+      console.log(data.scores)
+      // setUserPostList(IDdata.users);
+    };
+    userScore();
+  }, []);
 
   return (
-    //this will then pass postList from the usestate into posts which comes from dummy_social
     <div className="social_feed_container">
       <Dummy_feed posts={postList} />
     </div>
