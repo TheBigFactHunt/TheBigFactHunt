@@ -10,6 +10,8 @@ const SubmitScore = (props) => {
     const data = {
       user_id: localStorage.getItem("userId"),
       user_score: props.score,
+      date: new Date(),
+      first_name: localStorage.getItem("first_name")
     };
     try {
       const response = await axios.post(`${SCORES_API_URL}`, data);
