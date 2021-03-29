@@ -21,7 +21,7 @@ const NavIcon = styled(Link)`
   margin-left: 2rem;
   color: #adff2f;
   font-size: 2rem;
-  height: 80px;
+  height: 45px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
