@@ -22,22 +22,19 @@ const ExpertQuestion = (props) => {
           }
           props.setCounter(props.counter + 1);
         }}
-      ></button>
-      <button
-        className="falseButton"
-        id="answerButton"
-        onClick={() => {
-          if (props.question.correct_answer == "False") {
-            props.setScore(props.score + 5);
-            Swal.fire("Correct!");
-            props.setCounter(props.counter + 1);
-          } else {
-            props.setCounter(props.counter + 1);
-          }
-          if (props.question.correct_answer == "False") {
-            props.setScore(props.score + 5);
-          }
-          props.setCounter(props.counter + 1);
+        ></button>
+        <button
+          className="falseButton"
+          id="answerButton"
+          onClick={() => {
+            if (props.question.correct_answer == "False") {
+              props.setScore(props.score + 5);
+              Swal.fire("Correct!");
+              props.setCounter(props.counter + 1);
+            } else {
+              props.setCounter(props.counter + 1);
+              Swal.fire("Sorry, wrong answer");
+            }
         }}
       ></button>
     </div>

@@ -32,8 +32,8 @@ const SidebarNav = styled.nav`
   opacity: 0.85;
   background-image: url(https://wallpaperaccess.com/full/439751.jpg);
   border-radius: 45px;
-  margin-top: 20vh;
-  width: 250px;
+  margin-top: 10vh;
+  width: 310px;
   margin-left: 2vh;
   height: 70vh;
   display: flex;
@@ -41,7 +41,7 @@ const SidebarNav = styled.nav`
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 1.5s;
+  transition: 1.0s;
   z-index: 10;
 `;
 const SidebarWrap = styled.div`
@@ -67,25 +67,28 @@ const Sidebar = (props) => {
 
 
           {/* <Searchbar /> */}
-
-          <a id="signUpButton" href="/signup">
+      <span className="topBar">
+      <a id="signUpButton" href="/signup">
             Sign Up
           </a>
-
           {props.user.first_name ? (
             <span>
               <p id="loginInfo">
                 {props.user.first_name} {props.user.last_name}
               </p>
-              <a className="loginbutton" onClick={logOut} id="loginButton" href="/login">
+              <a className="signOutButton" onClick={logOut} href="/login">
                 Sign Out
               </a>{" "}
             </span>
           ) : (
-            <a className="loginbutton" id="loginButton" href="/login">
+            <a className="loginButton" href="/login">
               Log In
             </a>
           )}
+      </span>
+          
+
+          
         </Nav>
 
         <SidebarNav sidebar={sidebar}>

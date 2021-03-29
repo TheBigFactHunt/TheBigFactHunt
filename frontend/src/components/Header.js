@@ -7,8 +7,7 @@ const Header = () => (
     <h4 className="animate__animated animate__backInDown">
       {/* Register now for access to our Quiz! */}
     </h4>
-
-    <Progress />
+    {localStorage.getItem("first_name") ? null : <Progress />}
   </div>
 );
 
