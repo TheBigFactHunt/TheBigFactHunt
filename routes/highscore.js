@@ -1,9 +1,9 @@
 const express = require('express');
-const Scores = require('../models/scores');
+const highScores = require('../models/highscore');
 const router = express.Router();
 
 router.post('/', async (req,res) => {
-    new Scores(req.body).save((err, score) => {
+    new highScores(req.body).save((err, score) => {
         if (err) {
             console.log(err);
             res.status(500).json({status: 'Error', err })
@@ -15,12 +15,12 @@ router.post('/', async (req,res) => {
 
 router.get('/', (request, response) => {
     
-    Scores.find({}).sort({date: 'descending'}).limit(5).exec((err, scores) => { 
+    highScores.find({}).sort({user_score: 'descending'}).limit(10).exec((err, scores) => { 
         if (err) {
             console.log(err);
             response.status(500).json({status: 'Error', err })
         } else {
-            response.status(200).json({ status: 'Success!', scores });
+            response.status(200).json({ status: 'Success yes!', scores });
         }
     })
 })

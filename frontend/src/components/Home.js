@@ -19,7 +19,7 @@ const Home = (props) => {
       </div>
       <div className="individual_components">
         <Social_feed />
-        <HighScore user={props.user} />
+        <HighScore />
       </div>
     </div>
   );

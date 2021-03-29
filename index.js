@@ -1,6 +1,7 @@
 const express = require("express");
 const userRouter = require('./routes/user');
 const scoresRouter = require('./routes/scores');
+const userHighScores = require('./routes/highscore')
 const cors = require("cors");
 const bodyParser = require('body-parser');
 const nodemailer = require("nodemailer"); //added by joe for testing contact form
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use(cors());
 app.use("/users", userRouter);
 app.use("/scores", scoresRouter);
+app.use("/highscores", userHighScores);
 app.use("/", router); //added by joe for contact form
 
 const contactEmail = nodemailer.createTransport({
