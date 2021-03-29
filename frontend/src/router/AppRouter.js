@@ -64,13 +64,6 @@ const AppRouter = () => {
             />
             <Route
               render={(props) => (
-                <Quiz {...props} user={user} updateUser={updateUser} />
-              )}
-              path="/quiz"
-            />
-
-            <Route
-              render={(props) => (
                 <EasyQuiz {...props} user={user} updateUser={updateUser} />
               )}
               path="/easyquiz"
@@ -99,6 +92,13 @@ const AppRouter = () => {
               )}
               path="/about"
             />
+            <Route
+              render={(props) => (
+                <Animals {...props} user={user} updateUser={updateUser} />
+              )}
+              path="/animals"
+            />
+
             <Route render={() => <Redirect to="/" />} />
           </Switch>
           {/* to be moved */}
