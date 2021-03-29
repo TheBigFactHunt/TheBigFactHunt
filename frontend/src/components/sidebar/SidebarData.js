@@ -63,12 +63,12 @@ export const SidebarData = [
       {
         title: "Animals",
         path: "/animals",
-        icon: <GiDuck.GiSniffingDog/>,
+        icon: <GiDuck.GiCow/>,
       },
       {
-        title: "Celebs",
-        path: "/celebs",
-        icon: <GiDuck.GiPhotoCamera/>,
+        title: "Film",
+        path: "/film",
+        icon: <GiDuck.GiVideoCamera/>,
       },
       {
         title: "History",
@@ -76,14 +76,14 @@ export const SidebarData = [
         icon: <GiDuck.GiCannon />,
       },
       {
+        title: "Music",
+        path: "/music",
+        icon: <GiDuck.GiMusicalNotes />,
+      },
+      {
         title: "Science",
         path: "/science",
         icon: <GiDuck.GiMadScientist />,
-      },
-      {
-        title: "Sports",
-        path: "/sports",
-        icon: <GiDeath.GiSoccerBall />,
       },
     ],
   },
