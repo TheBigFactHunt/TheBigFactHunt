@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Question from "./Question";
+import ExpertQuestion from "./ExpertQuestion";
 import "./quiz.css";
 import SubmitScore from "./submitScore";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
@@ -12,7 +12,7 @@ const ExpertQuiz = (props) => {
   useEffect(() => {
     const getter = async () => {
       const response = await fetch(
-        `https://opentdb.com/api.php?amount=10&category=17&difficulty=medium&type=boolean`
+        `https://opentdb.com/api.php?amount=25&category=9&difficulty=medium&type=boolean`
       );
       const data = await response.json();
       setQuestions(data.results);
@@ -30,10 +30,10 @@ const ExpertQuiz = (props) => {
           alt="logo1"
         />
       </h3>
-      <h2 id="scoreCounter">Score: {score}</h2>
+      <h2 id="scoreCounter">Score: {score} / 125</h2>
       {counter < 10 ? <Timer /> : null}
       {questions.length > 0 && counter < 10 ? (
-        <Question
+        <ExpertQuestion
           question={questions[counter]}
           score={score}
           setScore={setScore}

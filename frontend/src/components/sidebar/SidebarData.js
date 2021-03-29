@@ -15,18 +15,18 @@ export const SidebarData = [
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
   },
-  {
-    title: "Log In",
-    path: "/login",
-    icon: <IoIcons.IoMdPeople />,
-  },
-  {
-    title: "Sign Up",
-    path: "/",
-    icon: <IoIcons.IoIosPaper />,
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-  },
+  // {
+  //   title: "Log In",
+  //   path: "/login",
+  //   icon: <IoIcons.IoMdPeople />,
+  // },
+  // {
+  //   title: "Sign Up",
+  //   path: "/",
+  //   icon: <IoIcons.IoIosPaper />,
+  //   iconClosed: <RiIcons.RiArrowDownSFill />,
+  //   iconOpened: <RiIcons.RiArrowUpSFill />,
+  // },
   {
     title: "Pick A Quiz",
     icon: <FaQuestion.FaQuestionCircle />,
