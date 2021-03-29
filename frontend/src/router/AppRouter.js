@@ -21,13 +21,18 @@ import History from "../components/quiz/categories/HistoryQuiz";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import "animate.css";
 const AppRouter = () => {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState({
+    first_name: localStorage.getItem("first_name"),
+    last_name: localStorage.getItem("last_name"),
+    user_email: localStorage.getItem("user_email"),
+    _id: localStorage.getItem("_id")
+  });
   const updateUser = (data) => {
     setUser((prevUser) => ({ ...prevUser, ...data }));
   };
-  const resetUser = () => {
-    setUser({});
-  };
+  // const resetUser = () => {
+  //   setUser({});
+  // };
 
   return (
     <BrowserRouter>

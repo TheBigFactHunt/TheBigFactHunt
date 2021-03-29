@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 
+
 const Question = (props) => {
+
+
+
   return (
     <div class Name="quizQuestions">
       <p className="pQuestion">{props.question.question}</p>

@@ -9,6 +9,7 @@ const ProQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
   const [counter, setCounter] = useState(0);
   const [score, setScore] = useState(0);
+  const [timeCounter, setTime] = useState(60);
   useEffect(() => {
     const getter = async () => {
       const response = await fetch(
@@ -31,8 +32,8 @@ const ProQuiz = (props) => {
         />
       </h3>
       <h2 id="scoreCounter">Score: {score} / 75</h2>
-      {counter < 25 ? <Timer /> : null}
-      {questions.length > 0 && counter < 25 ? (
+      {counter < 25 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
+      {questions.length > 0 && counter < 25 && timeCounter > 0 ? (
         <ProQuestion
           question={questions[counter]}
           score={score}

@@ -9,6 +9,7 @@ const ExpertQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
   const [counter, setCounter] = useState(0);
   const [score, setScore] = useState(0);
+  const [timeCounter, setTime] = useState(60);
   useEffect(() => {
     const getter = async () => {
       const response = await fetch(
@@ -31,8 +32,8 @@ const ExpertQuiz = (props) => {
         />
       </h3>
       <h2 id="scoreCounter">Score: {score} / 125</h2>
-      {counter < 10 ? <Timer /> : null}
-      {questions.length > 0 && counter < 10 ? (
+      {counter < 10 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
+      {questions.length > 0 && counter < 10 && timeCounter > 0 ? (
         <ExpertQuestion
           question={questions[counter]}
           score={score}
