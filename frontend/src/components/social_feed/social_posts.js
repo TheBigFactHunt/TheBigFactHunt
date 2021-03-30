@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 
 const SocialPost = (props) => {
+  let rollResult = Math.floor(Math.random() * 9) + 1;
+  let avatarPic = `/avatar${rollResult}.png`
   return (
-    //here is where the layout of the posts is created passing in the object keys with props.
       <div className="post_box">
-        <h3 className="post_top">user: {props.userName}</h3>
-        <div className="post_main">score: {props.userScore}</div>
-        
+        <p className="post_avatar"> {<img src={avatarPic} width="80" height="80" alt="image"/>}
+        <p className="post_top">{props.userName}   scored {props.userScore} on the Easy Quiz!</p>
+        {/* <p className="post_main">scored: {props.userScore}</p> */}
+        </p>
       </div>
   );
 }

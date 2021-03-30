@@ -6,6 +6,8 @@ import Logo from "../../images/logos/logo-small-yellow+purple.png";
 import SocialPost from "../social_feed/social_posts";
 import SubmitScore from "./submitScore";
 import Timer from "../timer/Timer";
+import Swal from 'sweetalert2';
+
 
 const EasyQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
@@ -54,7 +56,15 @@ const EasyQuiz = (props) => {
       {counter >= 25 ? <SubmitScore score={score} /> : null}
       <br></br>
       {counter >= 25 ? (<SocialPost score={score} name={props.first_name} />) : null}
-      {/* {props.timeCounter >= 0 ? questions.display = "none" : null} */}
+      {score === 1 ? Swal.fire({
+    title: 'Perfect Score!',
+    text: 'You got every question correct, well done! Enjoy the photo above',
+    imageUrl: 'https://i.imgur.com/XodJIMn.jpg',
+    imageWidth: 532,
+    imageHeight: 698,
+    imageAlt: 'Custom image',
+})
+: null}
     </div>
   );
 };
