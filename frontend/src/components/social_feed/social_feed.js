@@ -1,4 +1,4 @@
-import "./Social_feed.css";
+import "./social_feed.css";
 import Dummy_feed from "./dummy_social";
 import { SCORES_API_URL } from "../../utils/constants";
 import { useState, useEffect } from "react";

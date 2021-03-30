@@ -2,4 +2,8 @@
 font-size: 30px;
 }
 
+#submitButton:hover {
+    cursor: pointer;
+}
+
 
