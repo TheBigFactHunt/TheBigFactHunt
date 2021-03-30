@@ -14,7 +14,8 @@ const EasyQuiz = (props) => {
   const [counter, setCounter] = useState(0);
   const [score, setScore] = useState(0);
   const [timeCounter, setTime] = useState(60);
-    useEffect(() => {
+  const difficulty = "easy";
+  useEffect(() => {
     const getter = async () => {
       const response = await fetch(
         `https://opentdb.com/api.php?amount=25&category=9&difficulty=easy&type=boolean`
@@ -54,8 +55,8 @@ const EasyQuiz = (props) => {
       <br></br>
       {counter >= 25 ? <SubmitScore score={score} /> : null}
       <br></br>
-      {counter >= 25 ? (<SharePost score={score} name={props.first_name} />) : null}
-      {score === 25 ? Swal.fire({
+      {counter >= 25 ? (<SocialPost score={score} name={props.first_name} />) : null}
+      {score === 1 ? Swal.fire({
     title: 'Perfect Score!',
     text: 'You got every question correct, well done! Enjoy the photo above',
     imageUrl: 'https://i.imgur.com/XodJIMn.jpg',
@@ -64,6 +65,7 @@ const EasyQuiz = (props) => {
     imageAlt: 'Custom image',
 })
 : null}
+      {counter >= 25 ? (<SharePost score={score} name={props.first_name} />) : null}
     </div>
   );
 };

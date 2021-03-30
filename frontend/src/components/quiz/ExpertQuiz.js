@@ -5,8 +5,6 @@ import SubmitScore from "./submitScore";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
 import Timer from "../timer/Timer";
 import SharePost from "../social_feed/share_post";
-import Swal from 'sweetalert2';
-
 
 const ExpertQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
@@ -50,15 +48,6 @@ const ExpertQuiz = (props) => {
       {counter >= 25 ? <SubmitScore score={score} /> : null}{" "}
       <br></br>
       {counter >= 25 ? (<SharePost score={score} name={props.first_name} />) : null}
-      {score === 25 ? Swal.fire({
-    title: 'Perfect Score!',
-    text: 'You got every question correct, well done! Enjoy the photo above',
-    imageUrl: 'https://i.imgur.com/XodJIMn.jpg',
-    imageWidth: 532,
-    imageHeight: 698,
-    imageAlt: 'Custom image',
-})
-: null}
     </div>
   );
 };
