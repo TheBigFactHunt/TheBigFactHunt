@@ -1,0 +1,7 @@
+#shareButton {
+    font-size: 30px;
+    }
+
+#shareButton:hover {
+        cursor: pointer;
+    }

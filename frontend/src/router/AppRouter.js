@@ -135,8 +135,7 @@ const AppRouter = () => {
 
             <Route render={() => <Redirect to="/" />} />
           </Switch>
-          {/* to be moved */}
-          <div className="individual_components"></div>
+
           <div className="footerContainer">
             <Footer />
           </div>

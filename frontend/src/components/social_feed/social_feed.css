@@ -20,7 +20,9 @@
 }
 
 .post_box {
+  background-image: url("../../images/galaxy2.jpg");
   display: flex;
+  background-position-y: 17vh;
   flex-direction: column;
   background-color: beige;
   width: auto;
@@ -30,6 +32,7 @@
   padding: 20px;
   margin: 10px 15px 10px 15px;
   border-radius: 10px;
+  background-size: 100%;
 }
 .post_top {
   margin: 10px;
@@ -50,9 +53,8 @@
   box-shadow: 6px 6px 6px 6px black;
 }
 
-
 @media screen and (max-width: 900px) {
-    .social_feed_container {
-        display: none;
-    }
+  .social_feed_container {
+    display: none;
+  }
 }

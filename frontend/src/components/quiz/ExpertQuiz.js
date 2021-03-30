@@ -4,6 +4,7 @@ import "./quiz.css";
 import SubmitScore from "./submitScore";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
 import Timer from "../timer/Timer";
+import SharePost from "../social_feed/share_post";
 
 const ExpertQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
@@ -27,13 +28,14 @@ const ExpertQuiz = (props) => {
         <img
           id="logoImg"
           src={Logo}
-          className="animate__animated animate__hinge"
+          className="animate__animated animate__swing"
           alt="logo1"
         />
       </h3>
       <h2 id="scoreCounter">Score: {score} / 125</h2>
-      {counter < 10 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
-      {questions.length > 0 && counter < 10 && timeCounter > 0 ? (
+
+      {counter < 25 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
+      {questions.length > 0 && counter < 25 && timeCounter > 0 ? (
         <ExpertQuestion
           question={questions[counter]}
           score={score}
@@ -43,7 +45,9 @@ const ExpertQuiz = (props) => {
         />
       ) : null}
       <br></br>
-      {counter >= 10 ? <SubmitScore score={score} /> : null}
+      {counter >= 25 ? <SubmitScore score={score} /> : null}{" "}
+      <br></br>
+      {counter >= 25 ? (<SharePost score={score} name={props.first_name} />) : null}
     </div>
   );
 };

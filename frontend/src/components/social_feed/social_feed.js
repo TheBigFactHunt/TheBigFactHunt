@@ -12,7 +12,7 @@ const Social_feed = () => {
       const data = await response.json();
       console.log(data);
       setPostList(data.scores);
-      console.log(data.scores)
+      console.log(data.scores);
     };
     userScore();
   }, []);

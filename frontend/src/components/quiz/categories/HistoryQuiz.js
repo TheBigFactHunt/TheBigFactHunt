@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Question from "../Question";
 import "../quiz.css";
 import Logo from "../../../images/logos/logo-small-yellow+purple.png";
-import SocialPost from "../../social_feed/social_posts";
+import SharePost from "../../social_feed/share_post";
 import SubmitScore from "../submitScore";
 import Timer from "../../timer/Timer";
 
@@ -28,16 +28,16 @@ const HistoryQuiz = (props) => {
         <img
           id="logoImg"
           src={Logo}
-          className="animate__animated animate__rotateIn"
+          className="animate__animated animate__rollIn"
           alt="easylogo"
         />
       </h3>
 
-      <h2 id="scoreCounter">
-        Score: {score} / 10{" "}
-      </h2>
+      <h2 id="scoreCounter">Score: {score} / 10 </h2>
 
-      {counter < 10 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
+      {counter < 10 ? (
+        <Timer timeCounter={timeCounter} setTime={setTime} />
+      ) : null}
 
       {questions.length > 0 && counter < 10 && timeCounter > 0 ? (
         <Question
@@ -52,7 +52,7 @@ const HistoryQuiz = (props) => {
       {counter >= 10 ? <SubmitScore score={score} /> : null}
       <br></br>
       {counter >= 10 ? (
-        <SocialPost score={score} name={props.first_name} />
+        <SharePost score={score} name={props.first_name} />
       ) : null}
     </div>
   );
