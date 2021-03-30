@@ -13,29 +13,25 @@ const Nav = styled.div`
   width: 100%;
   height: auto;
   display: flex;
-
   align-items: center;
   position: fixed;
 `;
 
 const NavIcon = styled(Link)`
-  margin-left: 2vh;
+  margin-left: 2rem;
   color: #adff2f;
   font-size: 2rem;
-  height: 45px;
-  justify-content: space-evenly;
+  height: 40px;
   display: flex;
-
   justify-content: flex-start;
-  align-items: left;
-  posistion: fixed;
+  align-items: center;
 `;
 const SidebarNav = styled.nav`
   box-shadow: 5px 5px 5px 5px black;
   opacity: 0.85;
   background-image: url(https://wallpaperaccess.com/full/439751.jpg);
   border-radius: 45px;
-  margin-top: 18vh;
+  margin-top: 10vh;
   width: 310px;
   margin-left: 2vh;
   height: 70vh;
