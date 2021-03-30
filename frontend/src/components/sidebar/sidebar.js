@@ -11,10 +11,21 @@ import "./sidebar.css";
 
 const Nav = styled.div`
   width: 100%;
-  height: 110px;
+  height: 150px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  posistion: fixed;
+  text-align: right;
+  height: auto;
+  margin-top: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  color: #3a2b5c;
+  padding-top: 5vh;
+  z-index: 1;
 `;
 
 const NavIcon = styled(Link)`
@@ -25,6 +36,7 @@ const NavIcon = styled(Link)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  posistion: fixed;
 `;
 const SidebarNav = styled.nav`
   box-shadow: 5px 5px 5px 5px black;
