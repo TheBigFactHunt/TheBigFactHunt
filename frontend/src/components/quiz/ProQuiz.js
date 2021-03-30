@@ -33,7 +33,7 @@ const ProQuiz = (props) => {
           alt="prologo"
         />
       </h3>
-      <h2 id="scoreCounter">Score: {score} / 75</h2>
+      <p id="scoreCounter">Score: {score} / 75</p>
       {counter < 25 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
       {questions.length > 0 && counter < 25 && timeCounter > 0 ? (
         <ProQuestion

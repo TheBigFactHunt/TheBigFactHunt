@@ -28,3 +28,7 @@
 [alt="prologo"] {
   height: 30vh;
 }
+
+#scoreCounter {
+  font-size: 30px;
+}

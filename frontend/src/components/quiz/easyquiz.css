@@ -25,8 +25,7 @@
   color: cyan;
   width: 350px;
 }
-h2 {
-}
+
 .pQuestion {
   border: chartreuse solid 4px;
   color: yellow;
@@ -84,4 +83,8 @@ h2 {
   color: greenyellow;
   padding: 5%;
   font-size: 2rem;
+}
+
+#scoreCounter {
+  font-size: 30px;
 }
