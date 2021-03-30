@@ -37,4 +37,9 @@
 * {
   text-shadow: 1px 2px black;
   color: #adff2f;
+  font-size: 20px;
+}
+
+.sidelogo {
+  margin-right: 70vh;
 }
