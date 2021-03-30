@@ -32,7 +32,6 @@ const NavIcon = styled(Link)`
 `;
 const SidebarNav = styled.nav`
   box-shadow: 5px 5px 5px 5px black;
-
   opacity: 0.85;
   background-image: url(https://wallpaperaccess.com/full/439751.jpg);
   border-radius: 45px;
