@@ -20,6 +20,7 @@
 }
 
 .post_box {
+  box-shadow: chartreuse 5px 5px 5px;
   background-image: url("../../images/galaxy2.jpg");
   display: flex;
   background-position-y: 17vh;

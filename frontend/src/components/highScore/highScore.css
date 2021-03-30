@@ -19,6 +19,7 @@
 }
 
 .highScore_box {
+  box-shadow: aqua 3px 3px 3px;
   display: flex;
   flex-direction: column;
   background-position-y: -27vh;
@@ -46,11 +47,9 @@
   display: flex;
 }
 .highScore_top {
-    color: darkcyan;
-    font-size: 15px;
+  color: darkcyan;
+  font-size: 15px;
 }
-
-
 
 @media screen and (max-width: 900px) {
   .highScore_container {
