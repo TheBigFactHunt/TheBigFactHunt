@@ -28,16 +28,16 @@ const HistoryQuiz = (props) => {
         <img
           id="logoImg"
           src={Logo}
-          className="animate__animated animate__rotateIn"
+          className="animate__animated animate__rollIn"
           alt="easylogo"
         />
       </h3>
 
-      <h2 id="scoreCounter">
-        Score: {score} / 10{" "}
-      </h2>
+      <h2 id="scoreCounter">Score: {score} / 10 </h2>
 
-      {counter < 10 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
+      {counter < 10 ? (
+        <Timer timeCounter={timeCounter} setTime={setTime} />
+      ) : null}
 
       {questions.length > 0 && counter < 10 && timeCounter > 0 ? (
         <Question
