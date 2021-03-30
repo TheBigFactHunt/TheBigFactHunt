@@ -28,11 +28,12 @@ const ExpertQuiz = (props) => {
         <img
           id="logoImg"
           src={Logo}
-          className="animate__animated animate__hinge"
+          className="animate__animated animate__swing"
           alt="logo1"
         />
       </h3>
       <h2 id="scoreCounter">Score: {score} / 125</h2>
+
       {counter < 25 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
       {questions.length > 0 && counter < 25 && timeCounter > 0 ? (
         <ExpertQuestion
