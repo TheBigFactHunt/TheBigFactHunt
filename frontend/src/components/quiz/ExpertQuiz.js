@@ -49,7 +49,7 @@ const ExpertQuiz = (props) => {
       {counter >= 25 ? <SubmitScore score={score} /> : null}{" "}
       <br></br>
       {counter >= 25 ? (<SharePost score={score} name={props.first_name} />) : null}
-      {score === 25 ? Swal.fire({
+      {score === 125 ? Swal.fire({
     title: 'Perfect Score!',
     text: 'You got every question correct, well done! Enjoy the photo above',
     imageUrl: 'https://i.imgur.com/XodJIMn.jpg',
