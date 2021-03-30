@@ -3,7 +3,7 @@ import Question from "./Question";
 import "./quiz.css";
 import "./easyquiz.css";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
-import SocialPost from "../social_feed/social_posts";
+import SharePost from "../social_feed/share_post";
 import SubmitScore from "./submitScore";
 import Timer from "../timer/Timer";
 
@@ -53,7 +53,7 @@ const EasyQuiz = (props) => {
       <br></br>
       {counter >= 25 ? <SubmitScore score={score} /> : null}
       <br></br>
-      {counter >= 25 ? (<SocialPost score={score} name={props.first_name} />) : null}
+      {counter >= 25 ? (<SharePost score={score} name={props.first_name} />) : null}
       {/* {props.timeCounter >= 0 ? questions.display = "none" : null} */}
     </div>
   );

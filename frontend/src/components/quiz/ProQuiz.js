@@ -4,6 +4,7 @@ import ProQuestion from "./ProQuestion";
 import "./proquiz.css";
 import Logo from "../../images/logos/logo-small-yellow+purple.png";
 import Timer from "../timer/Timer";
+import SharePost from "../social_feed/share_post";
 
 const ProQuiz = (props) => {
   const [questions, setQuestions] = useState([]);
@@ -44,6 +45,8 @@ const ProQuiz = (props) => {
       ) : null}
       <br></br>
       {counter >= 25 ? <SubmitScore score={score} /> : null}{" "}
+      <br></br>
+      {counter >= 25 ? (<SharePost score={score} name={props.first_name} />) : null}
     </div>
   );
 };
