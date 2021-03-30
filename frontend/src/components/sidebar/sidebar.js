@@ -6,7 +6,7 @@ import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
 import SubMenu from "./subMenu";
 import { IconContext } from "react-icons/lib";
-import Searchbar from "./Searchbar";
+// import Searchbar from "./Searchbar";
 import "./sidebar.css";
 
 const Nav = styled.div`
@@ -41,7 +41,7 @@ const SidebarNav = styled.nav`
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 1.0s;
+  transition: 1s;
   z-index: 10;
 `;
 const SidebarWrap = styled.div`
@@ -53,8 +53,8 @@ const Sidebar = (props) => {
   const showSidebar = () => setSidebar(!sidebar);
 
   const logOut = () => {
-    localStorage.clear()
-  }
+    localStorage.clear();
+  };
 
   return (
     <>
@@ -64,31 +64,26 @@ const Sidebar = (props) => {
             <FaIcons.FaBars onClick={showSidebar} className="sidelogo" />
           </NavIcon>
 
-
-
           {/* <Searchbar /> */}
-      <span className="topBar">
-      <a id="signUpButton" href="/signup">
-            Sign Up
-          </a>
-          {props.user.first_name ? (
-            <span>
-              <p id="loginInfo">
-                {props.user.first_name} {props.user.last_name}
-              </p>
-              <a className="signOutButton" onClick={logOut} href="/login">
-                Sign Out
-              </a>{" "}
-            </span>
-          ) : (
-            <a className="loginButton" href="/login">
-              Log In
+          <span className="topBar">
+            <a id="signUpButton" href="/signup">
+              Sign Up
             </a>
-          )}
-      </span>
-          
-
-          
+            {props.user.first_name ? (
+              <span>
+                <p id="loginInfo">
+                  {props.user.first_name} {props.user.last_name}
+                </p>
+                <a className="signOutButton" onClick={logOut} href="/login">
+                  Sign Out
+                </a>{" "}
+              </span>
+            ) : (
+              <a className="loginButton" href="/login">
+                Log In
+              </a>
+            )}
+          </span>
         </Nav>
 
         <SidebarNav sidebar={sidebar}>
