@@ -13,6 +13,7 @@ img {
   height: 35vh;
 }
 h4 {
+  margin-top: 10vh;
   border: solid chartreuse 6px;
   box-shadow: 10px 10px 10px 10px black;
   border-radius: 95%;
@@ -25,4 +26,7 @@ h4 {
 }
 [alt="logo1"] {
   height: 30vh;
+}
+#signUpButton {
+  margin-right: 10vh;
 }

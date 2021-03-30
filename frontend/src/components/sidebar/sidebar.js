@@ -19,13 +19,16 @@ const Nav = styled.div`
 `;
 
 const NavIcon = styled(Link)`
-  margin-left: 2rem;
+  margin-left: 2vh;
   color: #adff2f;
   font-size: 2rem;
   height: 45px;
+  justify-content: space-evenly;
   display: flex;
+
   justify-content: flex-start;
-  align-items: center;
+  align-items: left;
+  posistion: fixed;
 `;
 const SidebarNav = styled.nav`
   box-shadow: 5px 5px 5px 5px black;
@@ -33,7 +36,7 @@ const SidebarNav = styled.nav`
   opacity: 0.85;
   background-image: url(https://wallpaperaccess.com/full/439751.jpg);
   border-radius: 45px;
-  margin-top: 10vh;
+  margin-top: 18vh;
   width: 310px;
   margin-left: 2vh;
   height: 70vh;
