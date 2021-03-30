@@ -33,7 +33,7 @@ const ExpertQuiz = (props) => {
           alt="logo1"
         />
       </h3>
-      <h2 id="scoreCounter">Score: {score} / 125</h2>
+      <p id="scoreCounter">Score: {score} / 125</p>
 
       {counter < 25 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
       {questions.length > 0 && counter < 25 && timeCounter > 0 ? (
