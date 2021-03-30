@@ -11,10 +11,11 @@ import "./sidebar.css";
 
 const Nav = styled.div`
   width: 100%;
-  height: 110px;
+  height: auto;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
+  position: fixed;
 `;
 
 const NavIcon = styled(Link)`
