@@ -1,4 +1,4 @@
-import "./social_feed.css";
+import "./Social_feed.css";
 import Dummy_feed from "./dummy_social";
 import { SCORES_API_URL } from "../../utils/constants";
 import { useState, useEffect } from "react";
@@ -12,7 +12,7 @@ const Social_feed = () => {
       const data = await response.json();
       console.log(data);
       setPostList(data.scores);
-      console.log(data.scores)
+      console.log(data.scores);
     };
     userScore();
   }, []);
