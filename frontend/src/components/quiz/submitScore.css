@@ -1,9 +1,16 @@
 #submitButton {
-font-size: 30px;
+  background-position-x: center;
+  border-radius: 10px;
+  color: chartreuse;
+  background-size: 80%;
+  background-image: url("../../images/button.jpg");
+  font-size: 30px;
+  height: 7vh;
 }
 
 #submitButton:hover {
-    cursor: pointer;
+  cursor: pointer;
+  background-position: center;
+  background-size: 100%;
+  background-image: url("../../images/galaxy2.jpg");
 }
-
-
