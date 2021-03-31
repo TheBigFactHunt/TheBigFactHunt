@@ -54,8 +54,14 @@
   box-shadow: 6px 6px 6px 6px black;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 400px) {
   .social_feed_container {
-    display: none;
+  width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .social_feed_container {
+  width: 100%;
   }
 }

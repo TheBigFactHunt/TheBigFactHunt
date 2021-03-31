@@ -15,6 +15,12 @@ const Nav = styled.div`
   display: flex;
   align-items: center;
   position: fixed;
+  @media (max-width: 400px) {
+    width: 50%;
+  }
+  @media (max-width: 500px) {
+    width: 50%;
+  }
 `;
 
 const NavIcon = styled(Link)`
@@ -25,6 +31,16 @@ const NavIcon = styled(Link)`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @media (max-width: 400px) {
+    font-size: 10px;
+    height: 20px;
+    margin-top: 10%;
+  }
+  @media (max-width: 500px) {
+    font-size: 10px;
+    height: 20px;
+    margin-top: 10%;
+  }
 `;
 const SidebarNav = styled.nav`
   box-shadow: 5px 5px 5px 5px black;
@@ -40,12 +56,23 @@ const SidebarNav = styled.nav`
   position: fixed;
   top: 0;
   left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 1s;
+  transition: 0.7s;
   z-index: 10;
+  @media (max-width: 400px) {
+    height: 65vh;
+    width: 30vh;
+    margin-top: 5vh;
+  }
+  @media (max-width: 500px) {
+    height: 65vh;
+    width: 30vh;
+    margin-top: 5vh;
+  }
 `;
 const SidebarWrap = styled.div`
   width: 100%;
 `;
+
 const Sidebar = (props) => {
   const [sidebar, setSidebar] = useState(false);
 
@@ -58,7 +85,7 @@ const Sidebar = (props) => {
   return (
     <>
       <IconContext.Provider value={({ color: "#f0e130" }, { size: "4vh" })}>
-        <Nav>
+        <Nav id="navBarIcon">
           <NavIcon to="#">
             <FaIcons.FaBars onClick={showSidebar} className="sidelogo" />
           </NavIcon>

@@ -88,3 +88,59 @@
 #scoreCounter {
   font-size: 30px;
 }
+
+@media screen and (max-width: 400px) {
+  .pQuestion {
+    font-size: 20px;
+  }
+  .trueButton {
+    height: 10vh;
+    width: 15vh;
+    margin-top: 5%;
+    box-shadow: 2px 2px 2px 2px darkgreen;
+    border-radius: 45px;
+    background-size: cover;
+    background-image: url("./imgs/truepic.jpg");
+    outline: none;
+  }
+  .falseButton {
+    height: 10vh;
+    transition: ease-in-out;
+    width: 13vh;
+    margin-left: 10vh;
+    margin-top: 10vh;
+    box-shadow: 2px 2px 2px 2px darkred;
+    border-radius: 45px;
+    background-size: 115%;
+    background-image: url("./imgs/falsepic.jpg");
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pQuestion {
+    font-size: 20px;
+  }
+  .trueButton {
+    height: 10vh;
+    width: 15vh;
+    margin-top: 5%;
+    box-shadow: 2px 2px 2px 2px darkgreen;
+    border-radius: 45px;
+    background-size: cover;
+    background-image: url("./imgs/truepic.jpg");
+    outline: none;
+  }
+  .falseButton {
+    height: 10vh;
+    transition: ease-in-out;
+    width: 13vh;
+    margin-left: 10vh;
+    margin-top: 10vh;
+    box-shadow: 2px 2px 2px 2px darkred;
+    border-radius: 45px;
+    background-size: 115%;
+    background-image: url("./imgs/falsepic.jpg");
+    outline: none;
+  }
+}
