@@ -35,7 +35,7 @@ const ExpertQuiz = (props) => {
       </h3>
       <p id="scoreCounter">Score: {score} / 125</p>
 
-      {counter < 25 ? <Timer timeCounter={timeCounter} setTime={setTime}/> : null}
+      {counter < 25 ? <Timer score={score} timeCounter={timeCounter} setTime={setTime}/> : null}
       {questions.length > 0 && counter < 25 && timeCounter > 0 ? (
         <ExpertQuestion
           question={questions[counter]}

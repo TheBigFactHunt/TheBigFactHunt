@@ -36,7 +36,7 @@ const AnimalQuiz = (props) => {
       <h2 id="scoreCounter">Score: {score} / 10 </h2>
 
       {counter < 10 ? (
-        <Timer timeCounter={timeCounter} setTime={setTime} />
+        <Timer score={score} timeCounter={timeCounter} setTime={setTime} />
       ) : null}
 
       {questions.length > 0 && counter < 10 && timeCounter > 0 ? (
