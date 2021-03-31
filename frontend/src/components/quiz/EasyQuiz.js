@@ -40,7 +40,7 @@ const EasyQuiz = (props) => {
         Score: {score} / 25{" "}
       </p>
 
-      {counter < 25 ? <Timer timeCounter={timeCounter} setTime={setTime} /> : null}
+      {counter < 25 ? <Timer score={score} timeCounter={timeCounter} setTime={setTime} /> : null}
 
       {questions.length > 0 && counter < 25 && timeCounter > 0 ? (
         <Question
