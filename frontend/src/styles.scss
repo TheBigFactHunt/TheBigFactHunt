@@ -57,7 +57,6 @@ h1 {
   background-image: url(https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80);
   text-shadow: slateblue 3px 3px 3px;
   border: chartreuse solid 4px;
-
   background-color: transparent;
   box-shadow: 6px 6px 6px 6px black;
   border-radius: 35px;
@@ -142,8 +141,12 @@ h1 {
   padding: 5px;
   margin-top: 5px;
   color: #380036;
-  border-radius: 8%;
+  border-radius: 10px;
   box-shadow: 5px 5px 5px 5px #380036;
+}
+
+.nextButton:hover {
+  cursor: pointer;
 }
 
 #regInputField {
@@ -235,5 +238,62 @@ h1 {
     .step {
       align-items: center;
     }
+  }
+  .logoContainer {
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 10px;
+  }
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1400px;
+  }
+  #logoImg {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    padding: 10px;
+    border-radius: 35%;
+  }
+  .input-form {
+    width: 60%;
+    margin-left: 30%;
+    text-align: center;
+    background-color: transparent;
+  }
+  #registerImage {
+    margin-right: 0;
+    margin-left: 0;
+    
+    height: 40px;
+    width: 400px;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .steps {
+    flex-direction: column;
+    align-items: center;
+
+    .step {
+      align-items: center;
+    }
+  }
+  .logoContainer {
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 10px;
+  }
+  body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1400px;
+  }
+  #logoImg {
+    margin-top: 20%;
+    margin-bottom: 10%;
+    padding: 10px;
+    border-radius: 35%;
   }
 }

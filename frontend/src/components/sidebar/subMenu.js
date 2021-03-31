@@ -17,9 +17,23 @@ const SidebarLink = styled(Link)`
     border-left: 5px solid #632ce4;
     cursor: pointer;
   }
+  @media (max-width: 400px) {
+    height: 50px;
+    padding: 10px;
+  }
+  @media (max-width: 500px) {
+    height: 50px;
+    padding: 10px;
+  }
 `;
 const SidebarLabel = styled.span`
   margin-left: 16px;
+  @media (max-width: 400px) {
+    margin-left: 10px;
+  }
+  @media (max-width: 500px) {
+    margin-left: 10px;
+  }
 `;
 const DropdownLink = styled(Link)`
   background: #414757;
@@ -34,6 +48,7 @@ const DropdownLink = styled(Link)`
     background: #632ce4;
     cursor: pointer;
   }
+
 `;
 const SubMenu = ({ item }) => {
   const [subnav, setSubnav] = useState(false);
