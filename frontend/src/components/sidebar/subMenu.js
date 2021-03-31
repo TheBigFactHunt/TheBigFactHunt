@@ -25,6 +25,22 @@ const SidebarLink = styled(Link)`
     height: 50px;
     padding: 10px;
   }
+  @media (max-width: 600px) {
+    height: 50px;
+    padding: 10px;
+  }
+  @media (max-width: 700px) {
+    height: 50px;
+    padding: 10px;
+  }
+  @media (max-width: 800px) {
+    height: 50px;
+    padding: 10px;
+  }
+  @media (max-width: 900px) {
+    height: 50px;
+    padding: 10px;
+  }
 `;
 const SidebarLabel = styled.span`
   margin-left: 16px;
@@ -32,6 +48,18 @@ const SidebarLabel = styled.span`
     margin-left: 10px;
   }
   @media (max-width: 500px) {
+    margin-left: 10px;
+  }
+  @media (max-width: 600px) {
+    margin-left: 10px;
+  }
+  @media (max-width: 700px) {
+    margin-left: 10px;
+  }
+  @media (max-width: 800px) {
+    margin-left: 10px;
+  }
+  @media (max-width: 900px) {
     margin-left: 10px;
   }
 `;

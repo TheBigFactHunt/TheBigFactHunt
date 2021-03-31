@@ -21,6 +21,18 @@ const Nav = styled.div`
   @media (max-width: 500px) {
     width: 50%;
   }
+  @media (max-width: 600px) {
+    width: 50%;
+  }
+  @media (max-width: 700px) {
+    width: 50%;
+  }
+  @media (max-width: 800px) {
+    width: 50%;
+  }
+  @media (max-width: 900px) {
+    width: 50%;
+  }
 `;
 
 const NavIcon = styled(Link)`
@@ -37,6 +49,26 @@ const NavIcon = styled(Link)`
     margin-top: 10%;
   }
   @media (max-width: 500px) {
+    font-size: 10px;
+    height: 20px;
+    margin-top: 10%;
+  }
+  @media (max-width: 600px) {
+    font-size: 10px;
+    height: 20px;
+    margin-top: 10%;
+  }
+  @media (max-width: 700px) {
+    font-size: 10px;
+    height: 20px;
+    margin-top: 10%;
+  }
+  @media (max-width: 800px) {
+    font-size: 10px;
+    height: 20px;
+    margin-top: 10%;
+  }
+  @media (max-width: 900px) {
     font-size: 10px;
     height: 20px;
     margin-top: 10%;
@@ -64,6 +96,26 @@ const SidebarNav = styled.nav`
     margin-top: 5vh;
   }
   @media (max-width: 500px) {
+    height: 65vh;
+    width: 30vh;
+    margin-top: 5vh;
+  }
+  @media (max-width: 600px) {
+    height: 65vh;
+    width: 30vh;
+    margin-top: 5vh;
+  }
+  @media (max-width: 700px) {
+    height: 65vh;
+    width: 30vh;
+    margin-top: 5vh;
+  }
+  @media (max-width: 800px) {
+    height: 65vh;
+    width: 30vh;
+    margin-top: 5vh;
+  }
+  @media (max-width: 900px) {
     height: 65vh;
     width: 30vh;
     margin-top: 5vh;

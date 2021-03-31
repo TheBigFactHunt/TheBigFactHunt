@@ -40,3 +40,27 @@ h4 {
   }
 }
 
+@media screen and (max-width: 600px) {
+  #logoImg {
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #logoImg {
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #logoImg {
+    height: 20vh;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #logoImg {
+    height: 30vh;
+  }
+}
+
