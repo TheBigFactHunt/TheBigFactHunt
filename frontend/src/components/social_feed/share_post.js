@@ -11,7 +11,8 @@ const SharePost = (props) => {
       user_id: localStorage.getItem("userId"),
       user_score: props.score,
       date: new Date(),
-      first_name: localStorage.getItem("first_name")
+      first_name: localStorage.getItem("first_name"),
+      difficulty: props.difficulty
     };
     try {
       const response = await axios.post(`${SCORES_API_URL}`, data);

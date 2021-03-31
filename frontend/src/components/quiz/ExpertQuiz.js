@@ -12,6 +12,8 @@ const ExpertQuiz = (props) => {
   const [counter, setCounter] = useState(0);
   const [score, setScore] = useState(0);
   const [timeCounter, setTime] = useState(60);
+  const [diff, setDiff] = useState("expert");
+
   useEffect(() => {
     const getter = async () => {
       const response = await fetch(
@@ -48,7 +50,7 @@ const ExpertQuiz = (props) => {
       <br></br>
       {counter >= 25 ? <SubmitScore score={score} /> : null}{" "}
       <br></br>
-      {counter >= 25 ? (<SharePost score={score} name={props.first_name} />) : null}
+      {counter >= 25 ? (<SharePost difficulty={diff} score={score} name={props.first_name} />) : null}
       {score === 125 ? Swal.fire({
     title: 'Perfect Score!',
     text: 'You got every question correct, well done! Enjoy the photo above',
