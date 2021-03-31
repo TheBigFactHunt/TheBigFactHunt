@@ -1,33 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 
 .supportForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10%;
 }
-
+.name {
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 4px black;
+  background: transparent;
+  width: 350px;
+}
+.email {
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 4px black;
+  background: transparent;
+}
+.message {
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px 4px black;
+  background: transparent;
+}
 #name {
-    width: 350px;
+  width: 350px;
 }
 
 #email {
-    width: 350px;
+  background: transparent;
+  width: 350px;
 }
 
 #message {
-    width: 350px;;
+  background: transparent;
+  width: 350px;
 }
 
 #submit {
-    font-size: 20px;
-    text-decoration: none;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 #submit:hover {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 #submit:visited {
-    color: red;
+  color: red;
 }
