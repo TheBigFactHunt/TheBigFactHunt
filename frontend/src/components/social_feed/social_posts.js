@@ -51,7 +51,7 @@ const SocialPost = (props) => {
   let avatarPic = avatars[rollResult]
   return (
       <div className="post_box">
-        <p className="post_avatar"> <img src={avatarPic} width="40" height="40" alt="image"/> {props.userName}   scored {props.userScore} on the Easy Quiz!</p>
+        <p className="post_avatar"> <img src={avatarPic} width="40" height="40" alt="image"/> {props.userName}   scored {props.userScore} on the {props.difficulty} quiz!</p>
         {/* <p className="post_top">{props.userName}   scored {props.userScore} on the Easy Quiz!</p> */}
         {/* <p className="post_main">scored: {props.userScore}</p> */}
       </div>

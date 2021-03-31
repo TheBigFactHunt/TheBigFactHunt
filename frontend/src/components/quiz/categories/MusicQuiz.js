@@ -11,6 +11,8 @@ const MusicQuiz = (props) => {
   const [counter, setCounter] = useState(0);
   const [score, setScore] = useState(0);
   const [timeCounter, setTime] = useState(30);
+  const [diff, setDiff] = useState("music");
+
   const difficulty = "easy";
   useEffect(() => {
     const getter = async () => {
@@ -52,7 +54,7 @@ const MusicQuiz = (props) => {
       {counter >= 10 ? <SubmitScore score={score} /> : null}
       <br></br>
       {counter >= 10 ? (
-        <SharePost score={score} name={props.first_name} />
+        <SharePost difficulty={diff} score={score} name={props.first_name} />
       ) : null}
     </div>
   );

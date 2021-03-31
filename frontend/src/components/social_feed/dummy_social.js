@@ -3,7 +3,7 @@ import Post from "./social_posts";
 const Dummy_feed = (props) => {
   const posts = props.posts.map((post, index) => {
     console.log(post);
-    return <Post key={index} userScore={post.user_score} userName={post.first_name}/>;
+    return <Post key={index} userScore={post.user_score} userName={post.first_name} difficulty={post.difficulty}/>;
   });
 
   return (
