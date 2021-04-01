@@ -1,223 +1,214 @@
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #aboutTitle {
-    text-align: center;
+  text-align: center;
 }
 #aboutText {
-    width: 500px;
-    text-align: center;
-    padding-top: 5%;
-    font-size: 30px;
-    margin-left: 37%;
+  width: 500px;
+  text-align: center;
+  padding-top: 5%;
+  font-size: 30px;
+  margin-left: 41%;
+  margin-top: 10%;
 }
 
 #ghLink {
-    font-size: 45px;
-    text-decoration: none;
-    color: seagreen;
+  font-size: 45px;
+  text-decoration: none;
+  color: seagreen;
 }
 
 #codenation {
-    text-decoration: none;
-    color: seagreen;
+  text-decoration: none;
+  color: seagreen;
 }
 
 @media screen and (max-width: 400px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-    }
-    #aboutText {
-        width: 300px;
-        text-align: center;
-        padding-top: 15%;
-        font-size: 25px;
-        margin-left: 12%;
-    }
-    #ghLink {
-        font-size: 28px;
-        text-decoration: none;
-        color: seagreen;
-    }
-    #aboutTitle {
-        text-align: center;
-        font-size: 40px;
-        margin-left: 8%;
-        margin-top: 40%;
-        max-width: 45vh;
-    }
-    #codenation {
-        text-decoration: none;
-        font-size: 28px;
-    }
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-
-  @media screen and (max-width: 500px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-    }
-    #aboutText {
-        width: 300px;
-        text-align: center;
-        padding-top: 15%;
-        font-size: 25px;
-        margin-left: 20%;
-    }
-    #ghLink {
-        font-size: 28px;
-        text-decoration: none;
-        color: seagreen;
-    }
-    #aboutTitle {
-        text-align: center;
-        font-size: 40px;
-        margin-left: 15%;
-        margin-top: 20%;
-        max-width: 45vh;
-    }
-    #codenation {
-        text-decoration: none;
-        font-size: 28px;
-    }
+  #aboutText {
+    width: 300px;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 25px;
+    margin-left: 12%;
   }
-
-  @media screen and (max-width: 600px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-    }
-    #aboutText {
-        width: 300px;
-        text-align: center;
-        padding-top: 15%;
-        font-size: 25px;
-        margin-left: 20%;
-    }
-    #ghLink {
-        font-size: 28px;
-        text-decoration: none;
-        color: seagreen;
-    }
-    #aboutTitle {
-        text-align: center;
-        font-size: 40px;
-        margin-left: 15%;
-        margin-top: 20%;
-        max-width: 45vh;
-    }
-    #codenation {
-        text-decoration: none;
-        font-size: 28px;
-    }
+  #ghLink {
+    font-size: 28px;
+    text-decoration: none;
+    color: seagreen;
   }
-
-  @media screen and (max-width: 700px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-    }
-    #aboutText {
-        width: 300px;
-        text-align: center;
-        padding-top: 15%;
-        font-size: 25px;
-        margin-left: 20%;
-    }
-    #ghLink {
-        font-size: 28px;
-        text-decoration: none;
-        color: seagreen;
-    }
-    #aboutTitle {
-        text-align: center;
-        font-size: 40px;
-        margin-left: 15%;
-        margin-top: 20%;
-        max-width: 45vh;
-    }
-    #codenation {
-        text-decoration: none;
-        font-size: 28px;
-    }
+  #aboutTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 8%;
+    margin-top: 40%;
+    max-width: 45vh;
   }
-
-  @media screen and (max-width: 800px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-    }
-    #aboutText {
-        width: 300px;
-        text-align: center;
-        padding-top: 15%;
-        font-size: 25px;
-        margin-left: 20%;
-    }
-    #ghLink {
-        font-size: 28px;
-        text-decoration: none;
-        color: seagreen;
-    }
-    #aboutTitle {
-        text-align: center;
-        font-size: 40px;
-        margin-left: 15%;
-        margin-top: 20%;
-        max-width: 45vh;
-    }
-    #codenation {
-        text-decoration: none;
-        font-size: 28px;
-    }
+  #codenation {
+    text-decoration: none;
+    font-size: 28px;
   }
+}
 
-  @media screen and (max-width: 900px) {
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    
-    }
-    #aboutText {
-        width: 300px;
-        text-align: center;
-        padding-top: 15%;
-        font-size: 25px;
-        margin-left: 20%;
-    }
-    #ghLink {
-        font-size: 28px;
-        text-decoration: none;
-        color: seagreen;
-    }
-    #aboutTitle {
-        text-align: center;
-        font-size: 40px;
-        margin-left: 15%;
-        margin-top: 20%;
-        max-width: 45vh;
-    }
-    #codenation {
-        text-decoration: none;
-        font-size: 28px;
-    }
+@media screen and (max-width: 500px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+  #aboutText {
+    width: 300px;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 25px;
+    margin-left: 20%;
+  }
+  #ghLink {
+    font-size: 28px;
+    text-decoration: none;
+    color: seagreen;
+  }
+  #aboutTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 15%;
+    margin-top: 20%;
+    max-width: 45vh;
+  }
+  #codenation {
+    text-decoration: none;
+    font-size: 28px;
+  }
+}
 
-  
+@media screen and (max-width: 600px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #aboutText {
+    width: 300px;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 25px;
+    margin-left: 20%;
+  }
+  #ghLink {
+    font-size: 28px;
+    text-decoration: none;
+    color: seagreen;
+  }
+  #aboutTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 15%;
+    margin-top: 20%;
+    max-width: 45vh;
+  }
+  #codenation {
+    text-decoration: none;
+    font-size: 28px;
+  }
+}
 
+@media screen and (max-width: 700px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #aboutText {
+    width: 300px;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 25px;
+    margin-left: 20%;
+  }
+  #ghLink {
+    font-size: 28px;
+    text-decoration: none;
+    color: seagreen;
+  }
+  #aboutTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 15%;
+    margin-top: 20%;
+    max-width: 45vh;
+  }
+  #codenation {
+    text-decoration: none;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #aboutText {
+    width: 300px;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 25px;
+    margin-left: 20%;
+  }
+  #ghLink {
+    font-size: 28px;
+    text-decoration: none;
+    color: seagreen;
+  }
+  #aboutTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 15%;
+    margin-top: 20%;
+    max-width: 45vh;
+  }
+  #codenation {
+    text-decoration: none;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #aboutText {
+    width: 300px;
+    text-align: center;
+    padding-top: 15%;
+    font-size: 25px;
+    margin-left: 20%;
+  }
+  #ghLink {
+    font-size: 28px;
+    text-decoration: none;
+    color: seagreen;
+  }
+  #aboutTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-left: 15%;
+    margin-top: 20%;
+    max-width: 45vh;
+  }
+  #codenation {
+    text-decoration: none;
+    font-size: 28px;
+  }
+}

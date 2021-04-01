@@ -20,12 +20,12 @@
 }
 
 .post_box {
-  box-shadow: chartreuse 5px 5px 5px;
+  box-shadow: pink 5px 5px 5px;
   background-image: url("../../images/galaxy2.jpg");
   display: flex;
   background-position-y: 17vh;
   flex-direction: column;
-  background-color: beige;
+
   width: auto;
   height: 150px;
   color: black;
@@ -56,36 +56,36 @@
 
 @media screen and (max-width: 400px) {
   .social_feed_container {
-  width: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 500px) {
   .social_feed_container {
-  width: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .social_feed_container {
-  width: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 700px) {
   .social_feed_container {
-  width: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 800px) {
   .social_feed_container {
-  width: 100%;
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 900px) {
   .social_feed_container {
-  width: 100%;
+    width: 100%;
   }
 }
