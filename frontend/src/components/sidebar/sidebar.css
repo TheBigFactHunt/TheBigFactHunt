@@ -12,7 +12,9 @@
   width: 300px;
   padding-left: 40px;
 }
-
+svg {
+  height: 2.5vh;
+}
 .topBar {
   display: flex;
   flex-direction: row;

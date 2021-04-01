@@ -1,6 +1,6 @@
 img {
   border-radius: 30px;
-  background-image: url(https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80);
+  background-image: url("https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHw%3D&w=1000&q=80");
   box-shadow: 8px 8px 8px 8px black;
 }
 .individual_components {
@@ -8,21 +8,30 @@ img {
   flex-direction: row;
   justify-content: space-evenly;
 }
-.logo1 {
-  width: 50vh;
-  height: 35vh;
+#logo1 {
+  width: 40vh;
+  height: 30vh;
 }
 h4 {
   margin-top: 2%;
   border: solid chartreuse 6px;
   box-shadow: 10px 10px 10px 10px black;
-  border-radius: 95%;
-  margin-left: 67vh;
+  border-radius: 120%;
+  margin-left: 85vh;
   opacity: 0.5;
-  max-width: 70vh;
-  min-height: 40vh;
-  background-size: cover;
+  max-width: 35vh;
+  min-height: 25vh;
+  background-position-y: 50%;
+  background-position-x: 25%;
+  background-size: 99%;
   background-image: url("./quiz/imgs/register1.jpg");
+}
+button {
+  margin: 3vh;
+  color: chartreuse;
+  width: 35vh;
+  background-size: cover;
+  background-image: url("../images/galaxy.jpg");
 }
 [alt="logo1"] {
   height: 30vh;
@@ -63,4 +72,3 @@ h4 {
     height: 30vh;
   }
 }
-

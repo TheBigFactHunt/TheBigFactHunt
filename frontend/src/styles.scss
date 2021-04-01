@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 
-$base-color: #fcad5a;
+$base-color: chartruse;
 $blue-color: darkolivegreen;
 
 * {
@@ -20,7 +20,7 @@ body {
 
 .logoContainer {
   text-align: center;
-  padding: 100px
+  padding: 100px;
 }
 
 #logoImg {
@@ -29,7 +29,7 @@ body {
 }
 
 #loggedInInfo {
-  color: #fcad5a;
+  color: chartreuse;
   text-align: right;
   font-size: 15px;
 }
@@ -42,7 +42,7 @@ body {
 
 #homePageGreeting {
   font-size: 20px;
-  color: goldenrod;
+  color: chartreuse;
 }
 
 .form-control:focus {
@@ -82,14 +82,14 @@ h1 {
   .step {
     margin: 0.5rem 3rem;
     display: flex;
-    color: #fcad5a;
+    color: chartreuse;
 
     a {
       color: $base-color;
     }
 
     div:first-of-type {
-      border: 1px solid #ccc;
+      border: 1px solid chartreuse;
       padding: 5px;
       border-radius: 50%;
       margin-right: 0.5rem;
@@ -98,6 +98,7 @@ h1 {
       text-align: center;
       line-height: 100%;
       padding-top: 7%;
+      opacity: 0.5;
     }
 
     :last-child {
@@ -108,7 +109,7 @@ h1 {
       div:first-of-type {
         background-color: $base-color;
         border: 1px solid transparent;
-        color: #fff;
+        color: chartreuse;
       }
 
       div:last-of-type {
@@ -131,13 +132,13 @@ h1 {
 }
 
 #inputForm {
-  color: #fcad5a;
+  color: chartreuse;
 }
 
 .nextButton {
   font-size: 20px;
   font-family: "Dela Gothic One";
-  background-color: #fcad5a;
+  background-color: chartreuse;
   padding: 5px;
   margin-top: 5px;
   color: #380036;
@@ -147,13 +148,17 @@ h1 {
 
 .nextButton:hover {
   cursor: pointer;
+  background-size: cover;
+  color: chartreuse;
+  background-position-y: 75vh;
+  background-image: url("../src/images/galaxy2.jpg");
 }
 
 #regInputField {
   box-shadow: 5px 5px 5px 5px #380036;
-  border-radius: 45px;
+  border-radius: 50px;
   background-color: transparent;
-  color: yellow;
+  color: chartreuse;
   padding: 5px;
   margin-top: 5px;
   font-size: 20px;
@@ -215,8 +220,6 @@ h1 {
   }
 }
 
-
-
 @media screen and (max-width: 400px) {
   .steps {
     flex-direction: column;
@@ -251,11 +254,10 @@ h1 {
   #registerImage {
     margin-right: 0;
     margin-left: 0;
-    
+
     height: 40px;
     width: 400px;
   }
-
 }
 
 @media screen and (max-width: 500px) {
