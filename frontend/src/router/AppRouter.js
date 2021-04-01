@@ -7,7 +7,6 @@ import Login from "../components/Login";
 import Footer from "../components/footer/footer";
 import Sidebar from "../components/sidebar/sidebar";
 import Home from "../components/Home";
-import Quiz from "../components/quiz/Quiz";
 import EasyQuiz from "../components/quiz/EasyQuiz";
 import ProQuiz from "../components/quiz/ProQuiz";
 import ExpertQuiz from "../components/quiz/ExpertQuiz";

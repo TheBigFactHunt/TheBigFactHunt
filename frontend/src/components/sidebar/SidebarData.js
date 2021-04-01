@@ -28,8 +28,8 @@ export const SidebarData = [
   //   iconOpened: <RiIcons.RiArrowUpSFill />,
   // },
   {
-    title: "Pick A Quiz",
-    icon: <FaQuestion.FaQuestionCircle />,
+    title: "Big Fact Hunt",
+    icon: <FaQuestion.FaHourglassStart/>,
 
     iconClosed: <RiIcons.RiArrowDownSFill />,
     iconOpened: <RiIcons.RiArrowUpSFill />,
@@ -88,7 +88,7 @@ export const SidebarData = [
     ],
   },
   {
-    title: "About",
+    title: "About Us",
     path: "/about",
     icon: <GiDuck.GiTeamIdea />,
   },

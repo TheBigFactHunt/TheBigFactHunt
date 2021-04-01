@@ -41,6 +41,7 @@ class Support extends Component {
     });
   }
 
+
   render() {
     let buttonText = this.state.status;
     return (
@@ -96,6 +97,6 @@ class Support extends Component {
       </form>
     );
   }
-}
+
 
 export default Support;

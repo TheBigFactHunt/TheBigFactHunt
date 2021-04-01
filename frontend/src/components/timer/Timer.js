@@ -27,8 +27,10 @@ function Timer(props) {
         <div className="timer">
             <div id="quizTimer">Time Left: {props.timeCounter}</div>
             {timeUp(props.timeCounter)}
+
             {props.timeCounter === 0 ? <SubmitScore score={props.score} timeCounter={props.timeCounter} /> : null}
             {props.timeCounter === 0 ? <SharePost score={props.score} timeCounter={props.timeCounter} /> : null}
+
         </div>
     );
 }

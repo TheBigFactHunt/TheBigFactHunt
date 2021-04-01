@@ -25,6 +25,10 @@ const scoreSchema = mongoose.Schema(
             required: true,
             trim: true
         },
+        difficulty: {
+            type: String,
+            required: true,
+        }
     }
 );
 const Scores = mongoose.model('Scores', scoreSchema);

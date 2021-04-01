@@ -48,3 +48,88 @@
 #submit:visited {
   color: red;
 }
+
+
+@media screen and (max-width: 400px) {
+    .supportForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40%;
+    }
+    #supportText {
+        padding-left: 7%;
+        font-size: 20px;
+        padding-bottom: 10%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .supportForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40%;
+    }
+    #supportText {
+        padding-left: 7%;
+        font-size: 20px;
+        padding-bottom: 10%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .supportForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40%;
+    }
+    #supportText {
+        padding-left: 7%;
+        font-size: 20px;
+        padding-bottom: 10%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .supportForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40%;
+    }
+    #supportText {
+        padding-left: 7%;
+        font-size: 20px;
+        padding-bottom: 10%;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .supportForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40%;
+    }
+    #supportText {
+        padding-left: 7%;
+        font-size: 20px;
+        padding-bottom: 10%;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .supportForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40%;
+    }
+    #supportText {
+        padding-left: 7%;
+        font-size: 20px;
+        padding-bottom: 10%;
+    }
+  }
+
