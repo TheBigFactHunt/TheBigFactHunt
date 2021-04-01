@@ -1,3 +1,4 @@
+const path = require("path");
 const express = require("express");
 const userRouter = require('./routes/user');
 const scoresRouter = require('./routes/scores');
@@ -9,17 +10,15 @@ const router = express.Router(); //added by joe for testing contact form
 require("dotenv").config();
 require('./db');
 
+const app = express();
+const PORT = process.env.PORT || 5000;
+
 if (process.env.NODE_ENV === "production" || process.env.NODE_ENV === "staging") {
   app.use(express.static("frontend/build"));
   app.get("*", (req, res) => {
     res.sendFile(path.join(__dirname + "/frontend/build/index.html"));
   });
 }
-
-const app = express();
-const PORT = process.env.PORT || 3000;
-
-
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
