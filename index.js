@@ -9,8 +9,17 @@ const router = express.Router(); //added by joe for testing contact form
 require("dotenv").config();
 require('./db');
 
+if (process.env.NODE_ENV === "production" || process.env.NODE_ENV === "staging") {
+  app.use(express.static("frontend/build"));
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname + "/frontend/build/index.html"));
+  });
+}
+
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -20,6 +29,7 @@ app.use("/users", userRouter);
 app.use("/scores", scoresRouter);
 app.use("/highscores", userHighScores);
 app.use("/", router); //added by joe for contact form
+
 
 const contactEmail = nodemailer.createTransport({
   host: "smtp.gmail.com",
