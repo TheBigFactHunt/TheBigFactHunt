@@ -97,6 +97,6 @@ class Support extends Component {
       </form>
     );
   }
-
+}
 
 export default Support;
